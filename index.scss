@@ -1,0 +1,257 @@
+@import "./lib/_base";
+
+
+html, body{width: 100%; height: 100vh;}
+
+
+
+// mobile_v    
+@media screen and (max-width:480px) {
+
+    #container{width: 100%; height: 100vh; margin: 0 auto;
+    >#headBox{width: 100vw; height: 15vh; padding-top: 5vh;
+        >h1{width: 0; height: 0; display: block; overflow: hidden;}
+        >p{width: 0; height: 0; overflow: hidden;}
+        >.bgi{width: 100vw; height: 20vh; margin-top: -5vh; background-image: url(../image/lsy_bgi.jpeg); background-repeat: no-repeat; background-size: 100% 100%; opacity: 0.45; float: left; position: relative; z-index: -100}
+        >.my_photo{width: 20vw; height: 15vh; float: left; margin-top: -15vh; margin-left: 5vw; background-image: url(../image/lsy.png); background-repeat: no-repeat; background-size: cover; }
+        }// headBox
+    
+    >#contentBox{width: 100vw; height: 73vh; background-color: #a1c;
+        >.mobBox{width: 90vw; height: 73vh; background-color: #fff;padding: 2vh 5vw;
+            >.mobInfo{width: 88vw; height: 19vh; float: left; border : 2px solid #777; box-shadow: 1px 1px 1px #595959; padding-top: 2vh; 
+                >p{font-size: 0.9rem; line-height: 1.125rem; margin-left: 2vw;}
+            }// pp
+            
+            >.mobPP{width: 41vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; border : 2px solid #777; box-shadow: 1px 1px 1px #595959; 
+                >a{width: 100%; height: 100%; display: block;}
+            }// tp
+            
+            >.mobTP{width: 41vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; margin-left: 5vw; border : 2px solid #777; box-shadow: 1px 1px 1px #595959;
+                >a{width: 100%; height: 100%; display: block;}
+            }// info
+            
+            >.mobEct{width: 88vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; border : 2px solid #777; box-shadow: 1px 1px 1px #595959;
+                >a{width: 100%; height: 100%; display: block;}
+            }// ect
+        }// mobBox
+        
+        >.someBox{width: 0; height: 0; display: block; overflow: hidden;}
+    }// contentBox
+    
+    >#footBox{width: 100vw; height: 7vh; background-color: #ca1;}// footBox
+    
+}// container
+    
+    
+}
+
+
+// mobile_h
+@media screen and (min-width:481px) and (max-width:640px) {
+
+    #container{width: 100%; height: 100vh; margin: 0 auto;
+    >#headBox{width: 100vw; height: 15vh; padding-top: 5vh;
+        >h1{width: 0; height: 0; display: block; overflow: hidden;}
+        >p{width: 0; height: 0; overflow: hidden;}
+        >.bgi{width: 100vw; height: 20vh; margin-top: -5vh; background-image: url(../image/lsy_bgi.jpeg); background-repeat: no-repeat; background-size: 100% 100%; opacity: 0.45; float: left; position: relative; z-index: -100}
+        >.my_photo{width: 20vw; height: 15vh; float: left; margin-top: -15vh; margin-left: 5vw; background-image: url(../image/lsy.png); background-repeat: no-repeat; background-size: cover;}
+        }// headBox
+    
+    >#contentBox{width: 100vw; height: 73vh; background-color: #a1c;
+        >.mobBox{width: 90vw; height: 73vh; background-color: #fff;padding: 2vh 5vw;
+            >.mobInfo{width: 88vw; height: 19vh; float: left; border : 2px solid #777; box-shadow: 1px 1px 1px #595959; padding-top: 2vh; 
+                >p{font-size: 0.9rem; line-height: 1.125rem; margin-left: 2vw;}
+            }// pp
+            
+            >.mobPP{width: 41vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; border : 2px solid #777; box-shadow: 1px 1px 1px #595959; 
+                >a{width: 100%; height: 100%; display: block;}
+            }// tp
+            
+            >.mobTP{width: 41vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; margin-left: 5vw; border : 2px solid #777; box-shadow: 1px 1px 1px #595959;
+                >a{width: 100%; height: 100%; display: block;}
+            }// info
+            
+            >.mobEct{width: 88vw; height: 20vh; background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 2vh; border : 2px solid #777; box-shadow: 1px 1px 1px #595959;
+                >a{width: 100%; height: 100%; display: block;}
+            }// ect
+        }// mobBox
+        
+        >.someBox{width: 0; height: 0; display: block; overflow: hidden;}
+    }// contentBox
+    
+    >#footBox{width: 100vw; height: 7vh; background-color: #ca1;}// footBox
+    
+}// container
+    
+}
+
+
+// tablet_v
+@media screen and (min-width:641px) and (max-width:768px) {
+
+#container{width: 100%; height: 100vh; margin: 0 auto;
+    >#headBox{width: 0; height: 0; overflow: hidden;}// headBox
+    
+    >#contentBox{width: 100%; height: calc(100vh - 9.7vw); background-color: #fff; padding-top: 9.7vw; position: relative;
+        >.mobBox{width: 0; height: 0; display: block; overflow: hidden;}
+        >.someBox{width: 91.58333vw; height: 41.3vw; margin-left: 1.5vw;
+            >.pp{width: 23.45833vw; height: 17.3vw; margin-left: 10.57vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// pp
+            
+            >.pp_img{width: 21.8vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-size: cover;}// pp_img
+            
+            >.my_photo{width: 23.66667vw; height: 16.6vw; background-image: url(../image/monitor_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 34vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// my_photo
+            
+            >.my_photo_img{width: 21.85vw; height: 14.7vw; float: left; margin-top: 0.95vw; margin-left: 1.65vw; background-image: url(../image/lsy_img_01.jpg); background-repeat: no-repeat; background-size: 50% 100%; background-position: center;}// my_photo_img
+            
+            >.resume{width: 23.45833vw; height: 17.3vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 57.65vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// resume
+            
+            >.resume_img{width: 21.9vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 1.75vw; background-image: url(../image/resume_s.png); background-repeat: no-repeat; background-size: cover;}// resume_img
+            
+            >.tp{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 10.57vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// tp
+            
+            >.tp_img{width: 21.8vw; height: 16.3vw; float: left;  margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-size: cover;}// tp_img
+            
+            >.info{width: 23.45833vw; height: 21.08333vw; background-image: url(../image/monitor.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.55vw; margin-left: 34.01vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// info
+            
+            >.info_img{width: 21.67vw; height: 15.35vw; float: left; margin-top: 1.25vw; margin-left: 1.65vw;  background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: cover;}// info_img
+            
+            >.ect{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 57.47vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// ect
+                
+            >.ect_img{width: 21.8vw; height: 16.3vw; float: left; margin-top: 1.43vw; margin-left: 1.76vw; background-image: url(../image/coming_soon_right.png); background-repeat: no-repeat; background-size: cover;}// ect_img
+            
+        }// someBox
+    }// contentBox
+    
+    >#footBox{width: 0; height: 0; overflow: hidden;}// footBox
+    
+}// container
+    
+}
+
+
+// tablet_h
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+#container{width: 100%; height: 100vh; margin: 0 auto;
+    >#headBox{width: 0; height: 0; overflow: hidden;}// headBox
+    
+    >#contentBox{width: 100%; height: calc(100vh - 9.7vw); background-color: #fff; padding-top: 9.7vw; position: relative;
+        >.mobBox{width: 0; height: 0; display: block; overflow: hidden;}
+        >.someBox{width: 91.58333vw; height: 41.3vw; margin-left: 1.5vw;
+            >.pp{width: 23.45833vw; height: 17.3vw; margin-left: 10.57vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// pp
+            
+            >.pp_img{width: 21.8vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-size: cover;}// pp_img
+            
+            >.my_photo{width: 23.66667vw; height: 16.6vw; background-image: url(../image/monitor_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 34vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// my_photo
+            
+            >.my_photo_img{width: 21.85vw; height: 14.7vw; float: left; margin-top: 0.95vw; margin-left: 1.65vw; background-image: url(../image/lsy_img_01.jpg); background-repeat: no-repeat; background-size: 50% 100%; background-position: center;}// my_photo_img
+            
+            >.resume{width: 23.45833vw; height: 17.3vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 57.65vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// resume
+            
+            >.resume_img{width: 21.9vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 1.75vw; background-image: url(../image/resume_s.png); background-repeat: no-repeat; background-size: cover;}// resume_img
+            
+            >.tp{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 10.57vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// tp
+            
+            >.tp_img{width: 21.8vw; height: 16.3vw; float: left;  margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-size: cover;}// tp_img
+            
+            >.info{width: 23.45833vw; height: 21.08333vw; background-image: url(../image/monitor.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.55vw; margin-left: 34.01vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// info
+            
+            >.info_img{width: 21.67vw; height: 15.35vw; float: left; margin-top: 1.25vw; margin-left: 1.65vw;  background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-size: cover;}// info_img
+            
+            >.ect{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 57.47vw; position: absolute; z-index: 500;
+                >a{width: 100%; height: 100%; display: block;}
+            }// ect
+                
+            >.ect_img{width: 21.8vw; height: 16.3vw; float: left; margin-top: 1.43vw; margin-left: 1.76vw; background-image: url(../image/coming_soon_right.png); background-repeat: no-repeat; background-size: cover;}// ect_img
+            
+        }// someBox
+    }// contentBox
+     
+    >#footBox{width: 0; height: 0; overflow: hidden;}// footBox
+    
+}// container
+    
+}
+
+
+// pc
+@media screen and (min-width:1025px) {
+
+#container{width: 100%; height: 100vh; margin: 0 auto;
+    >#headBox{width: 0; height: 0; overflow: hidden;}// headBox
+    
+    >#contentBox{width: 100%; height: calc(100vh - 9.7vw); background-color: #fff; padding-top: 9.7vw; position: relative;
+        >.mobBox{width: 0; height: 0; display: block; overflow: hidden;}
+        >.someBox{width: 91.58333vw; height: 41.3vw; margin-left: 1.5vw;
+            >.pp{width: 23.45833vw; height: 17.3vw; margin-left: 10.57vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; position: absolute; z-index: 500;
+                &:hover + .pp_img{background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// pp
+            
+            >.pp_img{width: 21.8vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// pp_img
+            
+            >.my_photo{width: 23.66667vw; height: 16.6vw; background-image: url(../image/monitor_center.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 34vw; position: absolute; z-index: 500;
+                &:hover + .my_photo_img{background-image: url(../image/lsy_img_01.jpg); background-repeat: no-repeat; background-size: contain; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// my_photo
+            
+            >.my_photo_img{width: 21.85vw; height: 14.7vw; float: left; margin-top: 0.95vw; margin-left: 1.65vw; background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// my_photo_img
+            
+            >.resume{width: 23.45833vw; height: 17.3vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-left: 57.65vw; position: absolute; z-index: 500;
+                &:hover + .resume_img{background-image: url(../image/resume_s.png); background-repeat: no-repeat; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// resume
+            
+            >.resume_img{width: 21.9vw; height: 15.3vw; float: left; margin-top: 1vw; margin-left: 1.75vw; background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// resume_img
+            
+            >.tp{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_left.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 10.57vw; position: absolute; z-index: 500;
+                &:hover + .tp_img{background-image: url(../image/coming_soon_left.png); background-repeat: no-repeat; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// tp
+            
+            >.tp_img{width: 21.8vw; height: 16.3vw; float: left;  margin-top: 1vw; margin-left: 11.43vw; background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// tp_img
+            
+            >.info{width: 23.45833vw; height: 21.08333vw; background-image: url(../image/monitor.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.55vw; margin-left: 34.01vw; position: absolute; z-index: 500;
+                &:hover + .info_img{background-image: url(../image/coming_soon_center.png); background-repeat: no-repeat; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// info
+            
+            >.info_img{width: 21.67vw; height: 15.35vw; float: left; margin-top: 1.25vw; margin-left: 1.65vw;  background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// info_img
+            
+            >.ect{width: 23.45833vw; height: 17.9vw; background-image: url(../image/monitor_right.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 16.7vw; margin-left: 57.47vw; position: absolute; z-index: 500;
+                &:hover + .ect_img{background-image: url(../image/coming_soon_right.png); background-repeat: no-repeat; background-position: center;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// ect
+                
+            >.ect_img{width: 21.8vw; height: 16.3vw; float: left; margin-top: 1.43vw; margin-left: 1.76vw; background-image: url(../image/tv_noise.gif); background-repeat: no-repeat; background-size: cover;}// ect_img
+            
+        }// someBox
+    }// contentBox
+    
+     >#footBox{width: 0; height: 0; overflow: hidden;}// footBox
+    
+}// container
+    
+}

@@ -1,0 +1,182 @@
+/* incuber ver.2 index */
+
+html, body{height: 100%;}
+#wrap{width: 960px; height: 100%; margin: 0 auto; display: block;}
+*.menu_btn{width: 54px; height: 36px; float: left;}
+    *.menu_btn>a{width: 100%; height: 100%; display: block; background-image: url(../images/menu_btn.png); background-repeat: no-repeat; background-position: center;}
+        *.menu_btn>a>span{width: 0; height: 0; display: block; overflow: hidden;}
+
+*.listBtn{width: 16px; height: 114px; margin-top: 546px;}
+    *.listBtn>span{width: 0; height: 0; display: block; overflow: hidden;}
+*.listBtn>ul{width: 100%; height: 100%;}
+    *.listBtn>ul>li{width: 16px; height: 16px; float: left; margin-top: 3.5px;}
+    *.listBtn>ul>.page_1{margin-top: 0;}
+        *.listBtn>ul>li>a{width: 16px; height: 16px; display: block; background-image: url(../images/list_btn.png); background-repeat: no-repeat; background-position: -2px -26px;}
+            *.listBtn>ul>li>a>span{width: 0; height: 0; display: block; overflow: hidden;}
+/* ----------------------------------- wrap -------------------------------------- */
+
+
+
+/* ----------------------------------- boxHead -------------------------------------- */
+
+#boxHead{width: calc(100% - 60px); height: 660px; position: relative; padding: 30px; background-image: url(../images/main.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+    #boxHead>h1{width: 666px; height: 100px; background-image: url(../images/logo.jpg); background-repeat: no-repeat; background-size: 100% 100%; float: right; margin-top: calc(360px - 80px); margin-right: calc(480px - 363px);}
+        #boxHead>h1>a{width: 100%; height: 100%; display: block;}
+
+    .menu_on{width: 250px; height: 100%; background-color: rgba(0,0,0,0.5); float: left; margin-top: -30px; margin-left: -280px; position: fixed; z-index: 500; display: none;}
+        .menu_on>ul{width: 207px; height: 350px; background-color: #fff; padding-left: 22px}
+            .menu_on>ul>.aboutIncuber{width: 208px; height: 20px; background-color: orange; float: left; margin-top: 18px;}
+            
+            .menu_on>ul>.newProduct{width: 198px; height: 20px; background-color: yellow; float: left; margin-top: 22px;}
+            
+            .menu_on>ul>.protfolio{width: 164px; height: 20px; background-color: green; float: left; margin-top: 22px;}
+            
+            .menu_on>ul>.development{width: 148px; height: 20px; background-color: blue; float: left; margin-top: 22px;}
+            
+            .menu_on>ul>.keep{width: 148px; height: 20px; background-color: darkblue; float: left; margin-top: 22px;}
+            
+            .menu_on>ul>.suver{width: 174px; height: 20px; background-color: violet; float: left; margin-top: 22px;}
+            
+            .menu_on>ul>.charge{width: 146px; height: 20px; background-color: aqua; float: left; margin-top: 22px;}
+
+    #boxHead>.listBtn{float: right; margin-right: -783px;}
+        #boxHead>.listBtn>ul>.page_1>a{background-position: -2px -2px;}
+
+/* ----------------------------------- boxHead -------------------------------------- */
+
+
+
+/* ----------------------------------- banner_01 -------------------------------------- */
+
+#banner_01{width: calc(100% - 60px); height: 660px; background-color: #fff0f0; padding: 30px; overflow: hidden;}
+    #banner_01>#mac{width: 840px; height: 646px; float: right; margin-right: -180px; background-image: url(../images/macpc_img.png); background-repeat: no-repeat; background-size: 100% 100%;}
+        #banner_01>#mac>.btn{width: 16px; height: 60px; position: absolute; margin-top: 460px; z-index: 500; opacity: 0.75;}
+        #mac:hover > .btn{background-color: #777; opacity: 0.3;} 
+        #banner_01>#mac>.btn button{width: 100%; height: 100%; cursor: pointer; background-color: transparent;}
+        #banner_01>#mac>.btn button>a{width: 100%; height: 100%;}
+        #banner_01>#mac>.btn button>a>span{width: 0; height: 0; display: block; overflow: hidden;}
+        #banner_01>#mac>.btn_l{margin-left: 292px; background-image: url(../images/button_left.png); background-repeat: no-repeat; background-size: 100% 100%;}
+        #banner_01>#mac>.btn_r{margin-left: 486px; background-image: url(../images/button_right.png); background-repeat: no-repeat; background-size: 100% 100%;}
+
+        #banner_01>#mac>#monitor{width: 742px; height: 392px; margin-top: 37px; margin-left: 32px; overflow: hidden;}
+        #banner_01>#mac>#monitor>.pc_banner_box{width: 400%; height: 100%; margin-left: -100%;}
+            
+                #banner_01>#mac>#monitor>.pc_banner_box>.pc_banner_01{width: 25%; height: 100%; background-image:url(../images/banner_2.jpg); background-repeat: no-repeat; background-size:100% 100%; float:left;}
+                #banner_01>#mac>#monitor>.pc_banner_box>.pc_banner_02{width: 25%; height: 100%; background-image:url(../images/banner_1.jpg); background-repeat: no-repeat; background-size:100% 100%; float:left;}
+                #banner_01>#mac>#monitor>.pc_banner_box>.pc_banner_03{width: 25%; height: 100%; background-image:url(../images/banner_3.jpg); background-repeat: no-repeat; background-size:100% 100%; float:left;}
+                #banner_01>#mac>#monitor>.pc_banner_box>.pc_banner_04{width: 25%; height: 100%; background-image:url(../images/banner_4.png); background-repeat: no-repeat; background-size:100% 100%; float:left;}
+        #banner_01>.listBtn{float: left; margin-left: -54px;}
+            #banner_01>.listBtn>ul>.page_2>a{background-position: -2px -2px;}
+
+/* ----------------------------------- banner_01 -------------------------------------- */
+
+
+
+/* ----------------------------------- banner_02 -------------------------------------- */
+
+#banner_02{width: calc(100% - 60px); height: 660px; background-color: #fff0f0; padding: 30px; overflow: hidden;}
+    #banner_02>#sub02Page{width: 826px; height: 516px; float: right; margin-top: 124px; margin-right: -82px;}
+    #sub02Page:hover > .btn{background-color: #777; opacity: 0.3;}
+        #banner_02>#sub02Page>#pad{width: 826px; height: 516px; background-image: url(../images/pad_phone.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: 18px; margin-left: 80px; }
+        
+        #banner_02>#sub02Page>#phone{width: 364px; height: 366px; background-image: url(../images/phone.png); background-repeat: no-repeat; background-size: 100% 100%; float: left; margin-top: -358px; margin-left: 325px;}
+        
+        #banner_02>#sub02Page>.btn{width: 16px; height: 60px; position: absolute; margin-top: 420px; z-index: 500; opacity: 0.75;}
+        #banner_02>#sub02Page>.btn button{width: 100%; height: 100%; cursor: pointer; background-color: transparent;}
+        #banner_01>#sub02Page>.btn button>a{width: 100%; height: 100%;}
+        #banner_01>#sub02Page>.btn button>a>span{width: 0; height: 0; display: block; overflow: hidden;}
+        #banner_02>#sub02Page>.btn_l{margin-left: 286px; background-image: url(../images/button_left.png); background-repeat: no-repeat; background-size: 100% 100%;}
+        #banner_02>#sub02Page>.btn_r{margin-left: 662px; background-image: url(../images/button_right.png); background-repeat: no-repeat; background-size: 100% 100%;}
+        
+        #banner_02>#sub02Page>#pad>.pad_banner_box{width: 400%; height: 100%; margin-left: -100%;}
+            
+                /* #banner_02>#sub02Page>#pad>.pad_banner_box>.pad_banner_01{width: 25%; height: 100%;  background-color: chartreuse; background-image:url(../img/product_img/1.jpg); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#pad>.pad_banner_box>.pad_banner_02{width: 25%; height: 100%; background-color: blueviolet; background-image:url(../img/product_img/10.jpg); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#pad>.pad_banner_box>.pad_banner_03{width: 25%; height: 100%; background-color: burlywood; background-image:url(../img/product_img/11.gif); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#pad>.pad_banner_box>.pad_banner_04{width: 25%; height: 100%; background-color: crimson; background-image:url(../img/product_img/12.gif); background-repeat: no-repeat; background-position:center; float:left;} */
+        
+        #banner_02>#sub02Page>#phone>.phone_banner_box{width: 400%; height: 100%; margin-left: -100%;}
+            
+                /* #banner_02>#sub02Page>#phone>.phone_banner_box>.phone_banner_01{width: 25%; height: 100%; background-color: chartreuse; background-image:url(../img/product_img/1.jpg); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#phone>.phone_banner_box>.phone_banner_02{width: 25%; height: 100%; background-color: #0c3; background-image:url(../img/product_img/10.jpg); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#phone>.phone_banner_box>.phone_banner_03{width: 25%; height: 100%; background-color: burlywood; background-image:url(../img/product_img/11.gif); background-repeat: no-repeat; background-position:center; float:left;}
+                #banner_02>#sub02Page>#phone>.phone_banner_box>.phone_banner_04{width: 25%; height: 100%; background-color: crimson; background-image:url(../img/product_img/12.gif); background-repeat: no-repeat; background-position:center; float:left;} */
+        #banner_02>.listBtn{float: left; margin-left: -54px;}
+            #banner_02>.listBtn>ul>.page_3>a{background-position: -2px -2px;}
+
+/* ----------------------------------- banner_02 -------------------------------------- */
+
+
+
+/* ----------------------------------- con_01 -------------------------------------- */
+
+#con_01{width: calc(100% - 60px); height: 660px; background-color: #fff0f0; padding: 30px;}
+        #con_01>.listBtn{float: right; margin-top: 546px;}
+            #con_01>.listBtn>ul>.page_4>a{background-position: -2px -2px;}
+
+/* ----------------------------------- con_01 -------------------------------------- */
+
+
+
+/* ----------------------------------- con_02 -------------------------------------- */
+
+    #con_02{width: calc(100% - 60px); height: 660px; background-color: #fff0f0; padding: 30px;}
+        #con_02>.sub02Page{width: 726px; height: 376px; margin-left: 144px;}
+            #con_02>.sub02Page>form{width: 100%; height: 100%; margin-top: 102px;}
+                #con_02>.sub02Page>form>legend{width: 162px; height: 34px; font-size: 1.5rem;}
+                #con_02>.sub02Page>form>.fs_l{width: 352px; height: 178px; float: left;}
+                    #con_02>.sub02Page>form>.fs_l>label{width: 120px; height: 22px; float: left; margin-top: 16px; font-size: 1.15rem;}
+                    #con_02>.sub02Page>form>.fs_l>input{width: 202px; height: 26px; float: left; margin-top: 12px; margin-left: 10px;}
+
+                #con_02>.sub02Page>form>.fs_r{width: 352px; height: 224px; float: left; margin-left: 20px;}
+                    #con_02>.sub02Page>form>fieldset>label{width: 100px; height: 22px; float: left; margin-top: 16px; font-size: 1.15rem;}
+                    #con_02>.sub02Page>form>fieldset>.addfile{width: 0; height: 0; overflow: hidden;}
+                    #con_02>.sub02Page>form>fieldset>.check{width: 0; height: 0; overflow: hidden;}
+                    #con_02>.sub02Page>form>fieldset>#quest{width: 330px; height: 138px; float: left; margin-top: 6px;}
+                    #con_02>.sub02Page>form>fieldset>#addfile{width: 202px; height: 26px; float: left; margin-top: 6px;}
+                    #con_02>.sub02Page>form>fieldset>#check{width: 70px; height: 30px; float: right; margin-top: 52px; margin-right: 20px;}
+        
+        #con_02>p{width: 100%; height: 100px; font-size: 0.9em; float: left; margin: 0 auto; margin-top: 70px; margin-left: 124px;}
+
+        #con_02>.listBtn{float: right; margin-top: 0;}
+            #con_02>.listBtn>ul>.page_5>a{background-position: -2px -2px;}
+
+/* ----------------------------------- con_02 -------------------------------------- */
+
+
+
+/* ----------------------------------- boxFoot -------------------------------------- */
+
+#boxFoot{width: calc(100% - 60px); height: 660px; background-color: #fff0f0; padding: 30px;}
+    #boxFoot>.footbox{width: 720px; height: 356px; margin-top: 172px; margin-left: 124px;}
+        .footbox>ul{width: 494px; height: 16px; margin-left: 120px;}
+            .footbox>ul>li{height: 100%; text-align: center; font-size: 0.9rem; line-height: 0.9rem; float: left; border-right: 1px solid #595959;}
+            #boxFoot>.footbox>ul>li:last-child{border-right: 0;}
+            #boxFoot>.footbox>ul>.chain_btn01{width: 70px;}
+            #boxFoot>.footbox>ul>.chain_btn02{width: 80px;}
+            #boxFoot>.footbox>ul>.chain_btn03{width: 138px;}
+            #boxFoot>.footbox>ul>.chain_btn04{width: 80px;}
+            #boxFoot>.footbox>ul>.chain_btn05{width: 50px;}
+            #boxFoot>.footbox>ul>.chain_btn06{width: 70px;}
+        .footbox>h2{width: 288px; height: 46px; background-image: url(../images/logo2.png); background-repeat: no-repeat; background-size: 100% 100%; margin-top: 38px; margin-left: 220px;}
+        .footbox>h2>span{width: 0; height: 0; display: block; overflow: hidden;}
+        .footbox>.info_one{width: 508px; height: 130px; margin-top: 40px; margin-left: 164px; background-color: #fff; font-size: 0.9rem;}
+            .footbox>.info_one>.info_box01{width: 202px; height: 100%; background-color: #fff0f0; float: left;}
+                .footbox>.info_one>.info_box01>.p_11{width: 130px; height: auto; letter-spacing: 0;}
+                .footbox>.info_one>.info_box01>p{width: 130px; height: auto; letter-spacing: 0; margin-top: 1px;}
+            .footbox>.info_one>.info_box02{width: 306px; height: 100%; background-color: #fff0f0; float: left;}
+                .footbox>.info_one>.info_box02>.p_21{width: 100%; height: auto; letter-spacing: 0;}
+                .footbox>.info_one>.info_box02>p{width: 100%; height: auto; letter-spacing: 0; margin-top: 1px;}
+        .footbox>.info_two{width: 720px; height: 32px; margin-top: 40px; margin-left: 30px; background-color: #fff0f0;}
+                .footbox>.info_two>p{height: auto; background-color: #fff0f0; font-size: 0.9rem; float: left;}
+                .footbox>.info_two>.p_31{width: 98px;}
+                .footbox>.info_two>.p_32{width: 282px; margin-left: 22px;}
+                .footbox>.info_two>.p_33{width: 168px; margin-left: 22px;}
+                .footbox>.info_two>.p_34{width: 122px; margin-left: 6px;}
+                .footbox>.info_two>.p_35{width: 160px;}
+                .footbox>.info_two>.p_36{width: 260px; margin-left: 20px;}
+
+    #boxFoot>.listBtn{float: right; margin-top: 18px;}
+        #boxFoot>.listBtn>ul>.page_6>a{background-position: -2px -2px;}
+
+/* ----------------------------------- boxFoot -------------------------------------- */
