@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--    <meta name="viewport" content="width=960" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/test.css">
+        
+    <!--[if lte IE 9]>        
+        
+    <link rel="stylesheet" href="./css/ie_sementic.css">
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/ie9.min.js"></script>
+    <script src="./js/PIE.js"></script>
+    
+    <![endif]-->
+    
+    <script src="./jQuery/jquery-1.12.3.min.js"></script>
+    <script src="./jQuery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./jQuery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style></style>
+    <script>
+        $(function(){
+            
+            var wheel_h= $('#wrap').height();
+            var timed = 1000;
+            
+            $("html, body").on('mousewheel DOMMouseScroll', function(e) {
+                var E = e.originalEvent;
+                console.log(E);
+                var delta = E.deltaY;
+                var win_index = $(this).index();
+                var win_i = win_index - 1;
+                var win_offset = $(this).offset().top;
+                
+                if (delta > 0) {
+                    $('html, body').stop().animate({'scrollTop': '+=' + wheel_h}, timed);
+                    console.log('마우스 휠을 내렸습니다.')
+                } else {
+                    $('html, body').stop().animate({'scrollTop': '-=' + wheel_h}, timed);
+                    console.log('마우스 휠을 올렸습니다.')
+                };
+            });
+            
+            var menu = $('.menu');
+            var menu_ml = menu.css('margin-left');
+            var menuBtn = menu.find('.menu_btn').find('a')
+            var arrow = menuBtn.find('.arrow')
+            var menu_w= menu.find('ul').width();
+            var timed = 1000;
+            menuBtn.on('click', function(e){
+                e.preventDefault();
+                menu.stop().toggleClass('leftM', 700);
+                arrow.stop().toggleClass('ro');
+        });
+    });
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">
+    
+		<header id="boxHead" class="wheel">
+		    <h1 id="logo"><a href="personal_index.html"><span>Incuber</span></a></h1>
+		    <aside class="menu">
+		        <div class="menu_btn"><a href="#"><span class="three_bar"></span><span class="arrow"></span><span class="explain">메뉴버튼</span></a></div>
+		        <ul id="menu_bar">
+		            <li class="aboutIncuber"><a href="#"><span>aboutIncuber</span></a></li>
+		            <li class="newProduct"><a href="#"><span>newProduct</span></a></li>
+		            <li class="protfolio"><a href="#"><span>protfolio</span></a></li>
+		            <li class="development"><a href="#"><span>개발</span></a></li>
+		            <li class="keep"><a href="#"><span>유지보수</span></a></li>
+		            <li class="suver"><a href="#"><span>서버.호스트</span></a></li>
+		            <li class="charge"><a href="#"><span>견적문의</span></a></li>
+		        </ul>
+		    </aside>
+            
+            <div class="listBtn"><span>페이지 순서 버튼</span>
+                <ul>
+                    <li class="page_1"><a href="#boxHead"><span>main page</span></a></li>
+                    <li class="page_2"><a href="#banner_01"><span>banner_01 page</span></a></li>
+                    <li class="page_3"><a href="#banner_02"><span>banner_02 page</span></a></li>
+                    <li class="page_4"><a href="#con_01"><span>con_01 page</span></a></li>
+                    <li class="page_5"><a href="#con_02"><span>con_02 page</span></a></li>
+                    <li class="page_6"><a href="#boxFoot"><span>footer page</span></a></li>
+                </ul>
+            </div>
+		</header>
+<!---------------------------------------- boxHead ---------------------------------------->
+		
+        <section id="banner_01" class="wheel">
+            <h2>PC버전 배너 이미지</h2>
+            <div id="mac">
+                <div class="btn btn_l"><button><a href="#"><span>왼쪽버튼</span></a></button></div>
+                <div class="btn btn_r"><button><a href="#"><span>오른쪽버튼</span></a></button></div>
+                <div id="monitor">
+                    <ul class="pc_banner_box">
+                       <li class="pc_banner_01"><a href="#"><span>이미지_01</span></a></li>
+                       <li class="pc_banner_02"><a href="#"><span>이미지_02</span></a></li>
+                       <li class="pc_banner_03"><a href="#"><span>이미지_03</span></a></li>
+                       <li class="pc_banner_04"><a href="#"><span>이미지_04</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!---------------------------------------- banner_01 ---------------------------------------->        
+        
+        <section id="banner_02" class="wheel">
+            <div id="sub02Page">
+                <div class="btn btn_l"><button><a href="#"><span>왼쪽버튼</span></a></button></div>
+                <div class="btn btn_r"><button><a href="#"><span>오른쪽버튼</span></a></button></div>
+                <div id="pad">
+                          <h2 class="padimg"><span>Tab버전 배너 이미지</span></h2>
+                          <ul class="pad_banner_box">
+                             <li class="pad_banner_01"><a href="#"><span>이미지_01</span></a></li>
+                             <li class="pad_banner_02"><a href="#"><span>이미지_02</span></a></li>
+                             <li class="pad_banner_03"><a href="#"><span>이미지_03</span></a></li>
+                             <li class="pad_banner_04"><a href="#"><span>이미지_04</span></a></li>
+                          </ul>
+                </div>
+                <div id="phone">
+                          <h2 class="phoneimg"><span>Phone버전 배너 이미지</span></h2>
+                          <ul class="phone_banner_box">
+                             <li class="phone_banner_01"><a href="#"><span>이미지_01</span></a></li>
+                             <li class="phone_banner_02"><a href="#"><span>이미지_02</span></a></li>
+                             <li class="phone_banner_03"><a href="#"><span>이미지_03</span></a></li>
+                             <li class="phone_banner_04"><a href="#"><span>이미지_04</span></a></li>
+                          </ul>
+                </div>
+            </div>
+        </section>
+<!---------------------------------------- banner_02 ---------------------------------------->        
+		
+        <article id="con_01" class="wheel">
+            <div class="sub01Page"></div>
+        </article>
+<!---------------------------------------- con_01 ---------------------------------------->		    
+		    
+        <article id="con_02" class="wheel">
+            <div class="sub02Page">
+                       <h2>견적서 작성</h2>
+                       <form action="" method="get">
+                           <legend>Request</legend>
+                           <fieldset class="fs_l">
+                               <label for="user">이름</label>
+                               <input type="user" id="user" name="user" value="">
+                               
+                               <label for="tel">연락처</label>
+                               <input type="tel" id="tel" name="tel" value="">
+                               
+                               <label for="email">Email</label>
+                               <input type="email" id="email" name="email" value="">
+                               
+                               <label for="money">예상견적금액</label>
+                               <input type="number" id="money" name="money" value="">
+                               
+                               <label for="finishday">기대완료시점</label>
+                               <input type="date" id="finishday" name="finishday" value="">
+                           </fieldset>
+                           
+                           <fieldset class="fs_r">
+                               <label for="quest">의뢰내용</label>
+                               <input type="text" id="quest" name="quest" value="">
+                               
+                               <label for="addfile" class="addfile">파일첨부</label>
+                               <input type="file" id="addfile" name="addfile" value="">
+                               
+                               <label for="check" class="check">확인</label>
+                               <input type="button" id="check" name="check" value="확인">
+                           </fieldset>
+                       </form>
+            </div>
+            <p>주식회사 인큐버는 축적된 경험과 기술력으로 여러분의 상상하고 계신것들을 웹상에서 현실로 만들어드리겠습니다.<br />정상개발계약의 경우 70% 선결제 작업완료 후 30% 결제방법을 진행이 되며, 일시불 결제 시 10% 할인 된 금액이 적용됩니다.<br />(판매형 홈페이지나 솔루션은 제외) 부분수정이나 개발, 단순코딩 등의 작업들은 선결제 후 진행이됩니다.<br />간단수정의 경우 유지보수 관리팀에서 신속하고 정확하게 처리하여 드립니다.<br />첨부파일의 용량이 크실경우는 korea@incuber.kr 메일로 전송하시면됩니다.</p>
+        </article>
+<!---------------------------------------- con_01 ---------------------------------------->		    
+				
+		<footer id="boxFoot" class="wheel">
+            <div class="footbox">
+                <ul>
+                    <li class="chain_btn01"><a href="#">회사소개</a></li>
+                    <li class="chain_btn02"><a href="#">이용약관</a></li>
+                    <li class="chain_btn03"><a href="#">개인정보보호정책</a></li>
+                    <li class="chain_btn04"><a href="#">이용안내</a></li>
+                    <li class="chain_btn05"><a href="#">Q &amp A</a></li>
+                    <li class="chain_btn06"><a href="#">고객센터</a></li>
+                </ul>
+                <h2><span>logo_2</span></h2>
+                <div class="info_one">
+                    <div class="info_box01">
+                        <p class="p_11">C  E  O</p>
+                        <p class="p_12">창 립 일</p>
+                        <p class="p_13">법 인 전 환 일</p>
+                        <p class="p_14">사 업 자 등 록 번 호</p>
+                        <p class="p_15">법 인 등 록 번 호</p>
+                        <p class="p_16">주 력 업 종</p>
+                    </div>
+                    <div class="info_box02">
+                        <p class="p_21">JONG SU KIM</p>
+                        <p class="p_22">1999년 3월</p>
+                        <p class="p_23">2009년 3월</p>
+                        <p class="p_24">220-87-78137</p>
+                        <p class="p_25">110111-4056738</p>
+                        <p class="p_26">
+                            프로그램 개발 및 소프트웨어 개발 <br />홈페이지 개발, ERP솔루션 개발
+                        </p>
+                    </div>
+                </div>
+                <div class="info_two">
+                    <p class="p_31">주식회사 인큐버</p>
+                    <p class="p_32">서울시 강남구 신사동 508&#45;3번지 &#40;삼현빌딩4층&#41;</p>
+                    <p class="p_33">Tel&#46; 개발실 &#58; 02&#45;515&#45;0636</p>
+                    <p class="p_34">Fax&#46; 02&#45;6442&#45;0136</p>
+                    <p class="p_35">E&#46;mail &#58; korea&#64;incuber&#46;kr</p>
+                    <p class="p_36">Copyright All Right Reserved&#46;&#46;&#46;Since 1990</p></div>
+            </div> 
+		</footer>
+<!---------------------------------------- boxFoot ---------------------------------------->		    
+
+	</div>
+<!---------------------------------------- wrap ---------------------------------------->
+
+</body>
+</html>
