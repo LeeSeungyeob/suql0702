@@ -1,0 +1,156 @@
+html, body{height: 100%; }
+
+// index_tab.scss
+@media screen and (min-width: 481px) and (max-width: 960px){
+    #wrap{}
+    
+    #header{width: 100%; height: 40px; position: fixed; z-index: 50; background-color: #fff;
+        #sitemap{display: none; } // #sitemap
+        #search{width: calc(100% -30px); height: auto; float: left; margin-top: 5px;
+            >h1{width: 70px; height: 30px; background-image: url(../img/logo2.gif); background-size:contain; background-repeat: no-repeat; background-position: center center; float: left; }
+            >.search_box{width: 40vw; height: 25px; float: left; border-radius: 10px; border: 1px solid #ffc621; margin-left: 5vw;
+                >fieldset{width: 100%; height: 20px; margin-top: 3px; margin-left: 5px;
+                    >input{width: 78%; height: 20px;float: left; }
+                    >button{width: 20%; height: 20px; float: right; background-color: transparent;}
+                }
+            }
+            >.search_icon{display: none; }
+        } // #search
+        #gnb{width: 30px; height: 30px; float: right; font-size: 30px; text-align: center; line-height: 30px; margin-right: 5px; margin-top: 5px; 
+            #gnbBox{width: 100%; height: 100%; position: relative; right: 3%; 
+                >.menu{width: 100%; height: 100%; background-color: transparent;  cursor: pointer; 
+                    >i{width: 100%; height: 100%; 
+                        >span{width: 0; height: 0; display: block; overflow: hidden; }
+                    }
+                }
+                >ul{width: 40vw; height: 100vh; position: absolute; top: 35px; background-color: #ddd; right: calc(-40vw - 6px); transition: all 0.4s; z-index: 100;
+                    >li{width: 100%; height: 5%;
+                        >a{width: 100%; height: 100%; display: block; text-decoration: none; font-size: 1.2rem; line-height: 250%;}
+                    }
+                }
+                .menu_list{right: -6px; z-index: 300; }
+                #bg{width: 100vw; height: 100vh; background-color: rgba(#333, 0.5); position: absolute; right: -6px; top: 35px; display: none;
+                    >span{width: 0; height: 0; display: block; overflow: hidden;}
+                }
+            }
+        } // #gnb
+    } // #header
+    
+    #banner{width: 100%; height: 60vw; padding-top: 40px;  overflow: hidden;
+        #main_banner{width: 100%; height: 100%; position: relative; overflow: hidden;
+            >.btn{width: 100%; height: 50%; position: absolute; top: 35%;
+                >div{width: auto; height: auto; position: absolute; 
+                    button{font-size: 3.2em; background-color: transparent; color: #fff; font-weight: bold; }
+                }
+                >.l_btn{left: 3%; }
+                >.r_btn{right: 3%; }
+            }
+            >.ban{width: 500%; height: 100%; margin-left: -100%;
+                >li{width: 20%; height: 100%; float: left; 
+                    >a{width: 100%; height: 100%; display: block; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+                }
+                >.box1>a{background-image: url(../img/banner_05.jpg);}
+                >.box2>a{background-image: url(../img/banner_01.jpg); }
+                >.box3>a{background-image: url(../img/banner_02.jpg); }
+                >.box4>a{background-image: url(../img/banner_03.jpg); }
+                >.box5>a{background-image: url(../img/banner_04.jpg); }
+            }
+            >.ind{width: 80%; height: 12px; position: absolute; bottom: 3%; left: 15%;
+                >li{width: 10%; height: 100%; float: left; margin-left: 5%; cursor: pointer; background-color: #fff; border-radius: 10px; 
+                    >span{width: 0; height: 0; display: block; overflow: hidden;}
+                }
+            }
+            .ind>li.indWidth{background-color: #fa3;}
+        } // #banner_main
+        #banner_sub{display: none; } // #banner_sub
+    } // #banner
+    
+    #article{width: 100%; height: 60vw; margin-top: 30px;
+        #best{width: 100%; height: 100%; overflow: hidden; position: relative; 
+            >h2{width: auto; height: auto; display: block; font-size: 1.2rem; margin-left: 5px;}
+            >.btn_2{width: 100%; height: 100%; position: absolute; 
+                >button{background-color: transparent; color: #fff; font-size: 3rem; font-weight: bold; margin-top: 20%; }
+                >.btn_l{float: left; margin-left: 3%; }
+                >.btn_r{float: right; margin-right: 3%; }
+            }
+        >.banner_op{width: 100%; height: auto; position: absolute; top: 33%; z-index: 50; display: none; 
+            >div{width: 320px; height: 180px; background-color: #555; opacity: 0.6;
+                >span{width: 0; height: 0; display: block; overflow: hidden; }
+                &:nth-child(1){float: left; }
+                &:nth-child(2){float: right; }
+            }
+        }
+        >.banner_best{width: 500%; height: 100%; margin-left: -100%;
+            >li{width: 20%; height: 100%; float: left; background-size: cover;
+                &:nth-child(1){}
+                &:nth-child(2){}
+                &:nth-child(3){}
+                &:nth-child(4){}
+                &:nth-child(5){}
+            }
+            >.best_01{background-image: url(../img/banner_01.jpg);}
+            >.best_02{background-image: url(../img/banner_02.jpg);}
+            >.best_03{background-image: url(../img/banner_03.jpg);}
+            >.best_04{background-image: url(../img/banner_04.jpg);}
+            >.best_05{background-image: url(../img/banner_05.jpg);}
+        }
+            >ul{width: 500%; height: 90%; margin-top: 5px; margin-left: -200%;
+                >li{width: 20%; height: 100%; background-color: #ddd; float: left;
+                    >a{width: 100%; height: 100%; display: block; }
+                }
+            }
+        } // #best
+        #story{display: none; } // #story
+        #ad{} // #ad
+        #recent{} // #recent
+        #service{} // #service
+    } // #article
+    
+    #footer{margin-top: 30px;
+        #footer_box{
+            #fnb{
+                >ul{width: 100%; height: 50px;
+                    >li{width:calc( (100% - 32px) / 3 ); height: 15px; padding: 5px 5px; float: left; border-right: 1px solid #aaa; text-align: center;
+                        >a{text-align: center; font-size: .7rem; line-height: 17px; text-decoration: none; 
+                        }
+                        
+                        &:nth-child(3){border-right: 0;}
+                        &:nth-child(1n+4){width:calc((100% - 43px) / 4);}
+                        &:nth-child(5){}
+                        &:nth-child(6){
+                            >a{letter-spacing: -0.0625rem; font-size: .67rem;}
+                        }
+                        &:nth-child(7){border-right: 0;}
+                    }
+                }
+            }
+            #addBox{width: 100%; margin-top: 20px;
+                >*{width: 100%; text-align: center; font-size: 0.8rem;}
+                >.info{
+                    >h3{width: 100%; height: auto;}
+                    >p{margin-top: 3px;}
+                }
+                >.add{margin-top: 20px;
+                    >h3{width: 100%; height: auto;}
+                }
+                >.con{width: auto; height: 70px; margin: 0 auto; margin-top: 20px; 
+                    >h3{width: auto; height: auto;}
+                    >ul{width: auto; margin-left: calc(50% - 110px);
+                        >li{width: 50px; height: 50px; float: left; margin-right: 10px;
+                            >a{width: 50px; height: 50px; display: block; background-repeat: no-repeat; background-size: cover; background-position: center; }
+                            &:nth-child(1){a{background-image: url(../img/F_icon.svg.png);}}
+                            &:nth-child(2){a{background-image: url(../img/instagram-logo.png);}}
+                            &:nth-child(3){a{background-image: url(../img/com_kakao_story.png);}}
+                            &:nth-child(4){margin-right: 0;
+                                >a{background-image: url(../img/com_kakao_story.png);}
+                            }
+                        }
+                    }
+                }
+            }
+            #foot_info{margin-top: 20px;
+                >*{text-align: center; font-size: 0.75rem; margin-top: 3px;}
+            }
+        } // #footer_box
+    } // #footer
+}

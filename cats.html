@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/cats.css">
+        
+    <!--[if lte IE 9]>        
+        
+    <link rel="stylesheet" href="./css/ie_sementic.css">
+    <script src="./js/html5shiv.min.js"></script>
+    <script src="./js/ie9.min.js"></script>
+    <script src="./js/PIE.js"></script>
+    
+    <![endif]-->
+    
+    <script src="./jQuery/jquery-1.12.3.min.js"></script>
+    <script src="./jQuery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./jQuery/jquery-ui.min.js"></script>
+    <script src="./js/cats.js"></script>
+    <script src="./js/cats_01.js"></script>
+    <script src="./js/cats_03.js"></script>
+    <script src="./js/cats_04.js"></script>
+    <title>Document</title>
+    <style></style>
+    <script>
+
+            $(document).ready(function(){
+            topAdd( $('#topAdd') );
+            wheel();
+            indicator();
+            popupGallery();
+            characterGallery();
+            video();
+            });
+            
+        
+    </script>
+</head>
+<body>
+       
+    <div id="wrap">
+        <div id="topAdd">
+            <p>본 페이지는 영리를 목적으로 하지 않고, 개인 포트폴리오 제작을 위한 학습사이트 입니다.</p>
+            <div class="addBox">
+               <a href="#">이미지 출처 바로가기</a>
+            </div>
+            <button type="button" aria-label="닫기">×</button>
+        </div>
+        
+        <div id="listBtn"><span>페이지 순서 버튼</span>
+            <ul class="indi">
+                <li class="page_1"><a href="#boxHead"><span>main page</span></a></li>
+                <li class="page_2"><a href="#cats_01"><span>등장인물 소개</span></a></li>
+                <li class="page_3"><a href="#cats_02"><span>줄거리</span></a></li>
+                <li class="page_4"><a href="#cats_03"><span>노래</span></a></li>
+                <li class="page_5"><a href="#cats_04"><span>이미지 갤러리</span></a></li>
+                <li class="page_6"><a href="#boxFoot"><span>아직 몰라</span></a></li>
+            </ul>
+        </div>
+       
+        <h1><a href="./cats.html"><span>logo</span></a></h1>
+        
+<!---------------------------------------- wrap ---------------------------------------->
+       
+		<header id="boxHead" class="wheel">
+            <video controls="controls" autoplay="autoplay" muted>
+                <source src="./multi/cats_bgv_2.mp4" type="video/mp4" frameborder="0" />
+            </video>
+            <h2 class="one_page_name"><p>Musical CATS</p></h2>
+            <ul id="bigBox">
+                <li class="about_box"></li>
+                <li class="character_box"></li>
+                <li class="story_box"></li>
+                <li class="music_box"></li>
+                <li class="gallery_box"></li>
+            </ul>
+		</header>
+<!---------------------------------------- boxHead ---------------------------------------->
+		
+        <section id="cats_01" class="wheel">
+            <h2 class="two_page_name"><p>CAT'S</p></h2>
+            <span class="black_img"></span>
+            <div class="introduce">
+                <div class="face">
+                    <img src="./images/cats_img/cat_01_munkustrap.jpg" alt="munkustrap"/><span>얼굴</span>
+                </div>
+                
+                <div class="name"><p>Munkustrap</p></div>
+                <div class="part"><p>사회자 고양이</p></div>
+                <div class="explain"><p>올드 듀터로노미가 없을 때 젤리클 멤버들을 보호해주고 챙겨주는 젊고 책임감이 강한 리더 고양이로 젋은 세대에게 이야기를 전달하는 역할을 한다. 다른 나이 든 고양이와 함께 암고양이와 새끼 고양이를 보호해 종종 새끼 고양이의 보호자로 불린다.</p></div>
+                
+            </div>
+            
+            <ul class="character">
+                <li class="cat_01"><a href="./images/cats_img/cat_01_munkustrap.jpg"><span class="catName">Munkustrap</span><span class="catPart">사회자 고양이</span><span class="catEx">올드 듀터로노미가 없을 때 젤리클 멤버들을 보호해주고 챙겨주는 젊고 책임감이 강한 리더 고양이로 젋은 세대에게 이야기를 전달하는 역할을 한다. 다른 나이 든 고양이와 함께 암고양이와 새끼 고양이를 보호해 종종 새끼 고양이의 보호자로 불린다.</span></a></li>
+                
+                <li class="cat_02"><a href="./images/cats_img/cat_02_old_deuteronomy.jpg"><span class="catName">Old Deuteronomy</span><span class="catPart">선지자 고양이</span><span class="catEx">젤리클의 리더이자 선조 고양이로서 최고 연장자인 그는 지혜롭고 현명하며 몇몇 고양이의 아빠나 할아버지로, 모든 고양이들에게 사랑과 존경을 받는다. 젤리클 축제 때마다 매년 고양이 한 마리를 선택해 '헤비사이드레이어'로 보내어 새로운 삶을 주는 그는 새끼 고양이들과 함께 그리자벨라를 받아들인다.</span></a></li>
+                
+                <li class="cat_03"><a href="./images/cats_img/cat_03_grizabella.jpg"><span class="catName">Grizabella</span><span class="catPart">매혹적인 고양이</span><span class="catEx">한때 아름다운 고양이였던 그녀는 수년 전 바깥세상으로 떠났었다. 지금은 늙고 외로운 고양이가 되어 다시 젤리클 고양이들에게로 돌아와 함께하길 바라지만 다른 고양이들은 그녀를 외면하고 배척한다.</span></a></li>
+                
+                <li class="cat_04"><a href="./images/cats_img/cat_04_rum_tum_tugger.jpg"><span class="catName">Rum Tum Tugger</span><span class="catPart">반항아 고양이</span><span class="catEx">젤리클 멤버 중 최고의 인기남으로 늘 그가 갖고 있지 않은 것을 원한다. 다른 고양이들에게 눈길을 끌고 싶어 하며, 다른 고양이들 역시 그를 언제든지 같이 놀고싶은 재미있는 존재로 여긴다. 존재 자체만으로도 카리스마가 넘쳐 암고양이들에 인기 최고이다. 올드듀터로노미가 사라졌을 때 미스토펠리스에게 부탁해 찾게 한다.</span></a></li>
+                
+                <li class="cat_05"><a href="./images/cats_img/cat_05_mistoffelees.jpg"><span class="catName">Mr. Mistoffelees</span><span class="catPart">마법사 고양이</span><span class="catEx">말을 하지 못하는 최고의 마술사로 사물을 사라지게도 나타나게도 만들 수 있고 낮잠을 자면서 모든 소음을 없앨 수도 있다. 맥케버티에게서 올드듀터로노미를 구해낸다.</span></a></li>
+                
+                <li class="cat_06"><a href="./images/cats_img/cat_06_mungojerrie.jpg"><span class="catName">Mungojerrie</span><span class="catPart">말썽쟁이 고양이</span><span class="catEx">장난기 많고 능청스러운 도둑고양이로 항상 럼플티저와 함께 붙어 다니며 말썽을 피우는 말썽쟁이 고양이이다. 재미있고 생기 넘치는 이들은 언제나 자신들과 함께 사는 가족들을 못살게 군다.</span></a></li>
+                
+                <li class="cat_07"><a href="./images/cats_img/cat_07_rumpleteazer.jpg"><span class="catName">Rumpleteazer</span><span class="catPart">정의로운 고양이</span><span class="catEx">장난기 많고 능청스러운 도둑고양이로 항상 몽고제리와 함께 붙어 다니며 말썽을 피우는 말썽쟁이 고양이이다. 재미있고 생기 넘치는 이들은 언제나 자신들과 함께 사는 가족들을 못살게 군다.</span></a></li>
+                
+                <li class="cat_08"><a href="./images/cats_img/cat_08_skimbleshanks.jpg"><span class="catName">Skimbleshanks</span><span class="catPart">기차검사원 고양이</span><span class="catEx">철도역에서 사는 그는 기차 차장으로서 기차의 모든 책임을 지는 질서 정연한 고양이이다. 기차를 타고 가족과 함께 자주 여행을 떠난다. 모두가 올바르게 행동하기를 원하며 모든 고양이에게 아저씨같은 존재다. 그가 고양이임에도 불고하고 승객들은 조심스레 행동한다.</span></a></li>
+                
+                <li class="cat_09"><a href="./images/cats_img/cat_09_jennyanydots.jpg"><span class="catName">Jennyanydots</span><span class="catPart">재미있는 고양이</span><span class="catEx">검비 고양이인 그녀는 낮시간에는 항상 앉아 있어서 게을러보이지만 쓰레기장에 없을 때 특별한 장소에서 잠을 자거나 밤만 되면 바퀴벌레와 생쥐들에게 뜨개질과 바느질을 교육시키느라 바쁜 고양이이다.</span></a></li>
+                
+                <li class="cat_10"><a href="./images/cats_img/cat_10_bustopher_jones.jpg"><span class="catName">Bustopher Jones</span><span class="catPart">부자 고양이</span><span class="catEx">젤리클의 멤버는 아니지만 언제나 환영을 받는 귀족 고양이로 25파운드나 나가는 과체중으로 여가 시간에 골프를 즐겨친다. 맛있는 음식과 거하게 차려진 식사를 좋아한다.</span></a></li>
+                
+                <li class="cat_11"><a href="./images/cats_img/cat_11_gus.jpg"><span class="catName">Gus</span><span class="catPart">극장 고양이</span><span class="catEx">거스는 올드 듀터로노미(선지자 고양이)를 제외하고는 나이가 제일 많고 오랜 세월동안 젤리클의 멤버였다. 젊은 시절 유명한 배우였지만 지금은 중풍을 앓고 있다.</span></a></li>
+                
+                <li class="cat_12"><a href="./images/cats_img/cat_12_victoria.jpg"><span class="catName">Victoria</span><span class="catPart">하얀 고양이</span><span class="catEx">아름다운 춤을 선보이는 가장 순수하고 순결한 고양이로 거의 모든 댄스에서 중앙에 있거나 리더의 역할을 한다. 젤리클 축제는 처음이지만 매력적인 춤을 선보인다.</span></a></li>
+                
+                <li class="cat_13"><a href="./images/cats_img/cat_13_demeter.jpg"><span class="catName">Demeter</span><span class="catPart">예민한 고양이</span><span class="catEx">금빛과 검정색이 섞인 고양이로, 맥캐버티 때문에 매사에 불안해하고 신경이 예민해 있다.맥캐버티로부터 납치를 당하는 위기를 맞기도 하며, 그녀가 불안한 기색을 보이면 어김없이 주변에 맥캐버티가 나타났다는 신호이다. 그녀는 그리자벨라가 나타났을 때 손을 내밀다가 피해버린다.</span></a></li>
+                
+                <li class="cat_14"><a href="./images/cats_img/cat_14_macavity.jpg"><span class="catName">Macavity</span><span class="catPart">악당 고양이</span><span class="catEx">그는 공식지정 악당이며, 고양이계의 마피아 같은 존재로써 악행을 일삼는 악의 중심이다. 자신의 부하인 쥐들을 동원해 젤리클의 리더인 올드 듀터로노미를 납치한다.</span></a></li>
+                
+                <li class="cat_15"><a href="./images/cats_img/cat_15_jellylorum.jpg"><span class="catName">Jellylorum</span><span class="catPart">친절한 고양이</span><span class="catEx">그녀는 늙은 연극배우로, 거스 옆에서 항상 챙겨주고, 어린 고양이들을 항상 돌봐 주는 중년의 마음씨 좋은 고양이로, 거스가 그로울타이거의 마지막 순간을 연기하는 동안 그로울타이거의 연인인 오페라 가수 그리들본(Griddlebone)의 연기를 한다.</span></a></li>
+                
+                <li class="cat_16"><a href="./images/cats_img/cat_16_bombalurina.jpg"><span class="catName">Bombalurina</span><span class="catPart">관능적인 고양이</span><span class="catEx">봄발루니아는 굉장히 관능적이고 섹시한 빨간 고양이다. 그녀는 자신의 성적 매력을 이용해 주의를 끌며, 특히 럼 텀 터거를 비롯한 수컷 고양이에게 매력을 발산한다. 드미터의 큰 언니 같은 존재로서 항상 그녀를 보호해 준다.</span></a></li>
+                
+                <li class="cat_17"><a href="./images/cats_img/cat_17_alonzo.jpg"><span class="catName">Alonzo</span><span class="catPart">정의로운 고양이</span><span class="catEx">그는 종족 내에서 가장 큰 수컷 중의 하나이며 항상 당당하고 눈에 띄지 않는 곳에서 어린 고양이들을 보호하는 남자다운 고양이로, 맥캐버티로부터 드미터를 구해줘 둘이 평생 함께 한다.</span></a></li>
+                
+                <li class="cat_18"><a href="./images/cats_img/cat_18_cassandra.jpg"><span class="catName">Cassandra</span><span class="catPart">샴 고양이</span><span class="catEx">팔, 다리, 어깨 등에 털을 붙이지 않은 유일한 고양이로, 4차원의 정신세계를 가진 묘한 아름다움을 지녔다. 늘 도도함을 잃지 않는 모습을 보여준다. 미스토펠리스가 그들의 리더인 올드 듀터로노미를 다시 되돌아오게 하는 마술을 쓸 때 그녀를 선택한다.</span></a></li>
+                
+                <li class="cat_19"><a href="./images/cats_img/cat_19_tumblebrutus.jpg"><span class="catName">Tumblebrutus</span><span class="catPart">사춘기 고양이</span><span class="catEx">사춘기 소년으로 어른 수고양이에 끼고 싶어한다. 생각이나 말보다 행동이 앞서고 짖궂으며, 분위기 파악을 못해서 멍커스트랩에게 많이 혼난다. 텀블브루투스는 쇼 내내 공중제비와 재주넘기로 강한 인상을 남기는 캐릭터이다.</span></a></li>
+                
+                <li class="cat_20"><a href="./images/cats_img/cat_20_coricopat.jpg"><span class="catName">Coricopat</span><span class="catPart">쌍둥이 고양이</span><span class="catEx">코리코팻과 탄토마일은 신비스러운 쌍둥이 고양이로 함께 움직이며 동일한 연기를 한다. 그들은 다른 하나가 어떻게 느끼고 행동하는지 서로 잘 안다.</span></a></li>
+                
+                <li class="cat_21"><a href="./images/cats_img/cat_21_tantomile.jpg"><span class="catName">Tantomile</span><span class="catPart">쌍둥이 고양이</span><span class="catEx">코리코팻과 탄토마일은 신비스러운 쌍둥이 고양이로 함께 움직이며 동일한 연기를 한다. 그들은 다른 하나가 어떻게 느끼고 행동하는지 서로 잘 안다.</span></a></li>
+                
+                <li class="cat_22"><a href="./images/cats_img/cat_22_sillabub.jpg"><span class="catName">Sillabub</span><span class="catPart">호기심 고양이</span><span class="catEx">빅토리아의 절친한 친구이며, 호기심이 많고 똑똑하며 순수한 아기 고양이이다. 무릎을 꿇거나 살금살금 걷는다. 그리자벨라의 메모리를 함께 부르며 그녀가 젤리클로 돌아오는데 도움을 준다.</span></a></li>
+                
+                <li class="cat_23"><a href="./images/cats_img/cat_23_pouncival.jpg"><span class="catName">Pouncival</span><span class="catPart">흉내쟁이 고양이</span><span class="catEx">거의 알려지지 않은 캐릭터 중에 하나다. 그룹 댄스, 노래, 장면에서 보인다. 아크로바틱 기술을 보여준다. 그는 럼텀 터거나 알론조와 같이 되고 싶은 젊은 수코양이 중의 하나다.</span></a></li>
+                
+                <li class="cat_24"><a href="./images/cats_img/cat_24_admetus.jpg"><span class="catName">Admetus</span><span class="catPart">신사 고양이</span><span class="catEx">내적으로 강하며, 관대하고 신사적인 고양이로 남자다운 면모를 보인다.</span></a></li>
+                
+                <li class="cat_25"><a href="./images/cats_img/cat_25_electra.jpg"><span class="catName">Electra</span><span class="catPart">분주한 고양이</span><span class="catEx">여기저기 끼어들기 좋아해 항상 분주하고 산만하다.</span></a></li>
+                
+                <li class="cat_26"><a href="./images/cats_img/cat_question.png"><span class="catName">Victor</span><span class="catPart">고집쟁이 고양이</span><span class="catEx">어느 고양이보다 고집이 세고 완고하면서도 심사숙고하며 배려심이 강한 고양이이다.</span></a></li>
+                
+                <li class="cat_27"><a href="./images/cats_img/cat_question.png"><span class="catName">Quaxo</span><span class="catPart">고독한 고양이</span><span class="catEx">제멋대로이면서도 조용한 어린 고양이로, 조숙한 면도 있는 고양이이다.</span></a></li>
+                
+                <li class="cat_28"><a href="./images/cats_img/cat_question.png"><span class="catName">George</span><span class="catPart">허풍쟁이 고양이</span><span class="catEx">즉흥적이면서도 당당한 늠름한 고양이이다.</span></a></li>
+                
+                <li class="cat_29"><a href="./images/cats_img/cat_question.png"><span class="catName">Olivia</span><span class="catPart">명상 고양이</span><span class="catEx">생각이 깊고 단호한 성격을 지녔다.</span></a></li>
+            </ul>
+            
+        </section>
+<!---------------------------------------- cats_01 ---------------------------------------->        
+        
+        <section id="cats_02" class="wheel">
+            <h2 class="three_page_name"><p>Story</p></h2>
+            <span class="black_bgc"></span>
+            <div class="movie">
+                <iframe src="https://www.youtube.com/embed/nnmhiu7vcMk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="story_write"><p><span>제 1막 : </span> 한밤중에 고양이들이 그들만의 축제를 준비하고 있다. 
+인기척 하나 들리지 않는 한밤중. 갑자기 터져 나갈듯한 음악 소리, 불빛과 함께 실제보다 더 크게 과장된 쓰레기 쌓인 공터가 보인다. 오늘 밤은 젤리클 고양이들이 해마다 한 번씩 모여 그들만의 축제를 여는 아주 특별한 날. 고양이들은 그들만의 특별한 재주와 특성들을 노래하며 젤리클 고양이들이 누구인지를 설명하고 그들에게는 세 가지의 이름이 있음을 밝힌다. 첫번째 이름은 주인들이 지어준 이름, 두 번째는 고양이 개성에 맞는 독특한 이름, 마지막으로는 인간들이 모르는 고양이들만의 비밀스런 이름 이다.
+
+하얀 고양이 빅토리아가 젤리클 축제의 시작을 알리고 이어 커다란 회색 얼룩 고양이 문커스트랩이 1년에 한번 하룻밤동안 진행되는 모든 젤리클 고양이들의 축제를 소개한다. 고양이들은 지도자 고양이 올드 듀터로노미를 기다리고 있다. 올드 튜터로노미는 매년 축제 때 '헤비사이드 레이어(Heavyside Layer)'로 올라가 새로운 삶으로 다시 태어날 '젤리클 고양이'를 정하는 고양이들의 지도자이기도 하다.
+
+하루종일 앉아서 빈둥거리는 늙은 검비 고양이 제니 애니도츠, 인기 절정의 장난꾸러기 고양이 럼텀터거가 차례로 등장하고 뒤따라 매혹적인 고양이 그리자벨라가 쓰레기장에 모습을 나타낸다. 오래 전 세상을 탐험하기 위해서 무리를 떠났던 그녀는 이제 다시 젤리클 고양이 무리 곁으로 돌아 오기를 바라지만 고양이들은 그녀를 외면한다. 육중한 몸매를 자랑하는 버스토퍼 존스는 고양이들 사이에서 언제나 하얀 각반을 차려 입는 멋쟁이 고양이로 유명하다. 고급 호프와 클럽에 자주 출입하는 버스토퍼 존스는 쉴 틈 없이 먹어대는 엄청난 대식가이기도 하다.
+
+갑자기 천둥이 치는 듯한 요란한 소리가 들려오고 싸이렌 소리와 붉은 경광등이 잔인한 맥캐버티 고양이가 풀려났음을 알린다 모든 고양이들이 도망간 무대 뒤로부터 사고뭉치 몽고제리와 렘플티저, 도둑 고양이들이 등장하고 이어서 모든 젤리클 고양이 무리가 모여들어 모두가 기다리던 올드 튜터로노미를 반갑게 맞이하며 문커스트랩의 사회로 춤과 노래로 가득 찬 특별한 잔치를 벌인다. 젤리클 고양이들의 라이벌인 '피크'와 '팔리클' 개들의 흉내를 내며 신나게 잔치를 벌이던 고양이들은 또다시 들려오는 잔인한 맥커버티 고양이의 소리에 놀라 황급히 도망간다. 올드 듀터로노미는 두려움에 떠는 고양이들을 안심 시키고 고양이들이 기다리던 '젤리클 축제'가 열릴 시간임을 알린다. 그리자벨라는 다시 한번 축제에 참석하려고 접근하지만 결국 고양이들에게 외면 당하고 아름다웠던 옛날을 회상하며 쓸쓸히 사라져 간다.
+
+<span>제 2막 : </span> 그리자벨라의 '메모리'가 울려퍼지면서 동트기 직전 젤리클 고양이를 선발한다
+
+고양이들은 잠시 휴식을 취하며 자신들이 체험했던 행복의 의미를 생각해 보고 있다. 이어 젤리로럼이 다른 고양이들을 소개하기 시작한다. 첫번째 고양이는 그 옛날 유명한 배우들과 어깨를 나란히 했던 늙은 극장 고양이 거스. 그는 옛날을 회상하며 전성기 때의 연극 하나를 소개한다. 회상 속에서 화려했던 젊은 시절로 돌아간 거스는 여주인공 그리들본과의 로맨스, 배위에서 벌어졌던 싸움등을 얘기하지만 곧 현재의 늙고 초라한 자신을 발견한다. 그때 기차 고양이 스킴블샹크스가 나타나 기차안에서의 일과를 설명하며 모든 일을 완벽히 해내는 자신의 활약상을 소개한다.
+
+또 한번 커다란 굉음을 들리고 모두가 두려워하는 무시무시한 고양이 맥캐버티가 나타난다. 다른 두 마리의 맥캐버티 일당들이 침입해 올드 튜터로노미를 납치해 가고 그들을 찾던 중에 디미터와 봄바루리나는 '범죄의 나폴레옹' 맥캐버티의 극악무도함을 이야기한다. 맥캐버티는 듀터로노미로 분장한 체 다시 고양이들에게 접근하지만 들통이 나고 문커스트랩을 비롯 다른 고양이들과 싸움을 벌인다. 궁지에 몰린 맥캐버티는 무대를 엉망진창으로 뒤엎고 고양이들을 암흑 속에 남긴 체 사라진다. 럼텀터거는 실종된 튜터로노미를 찾기 위해 마법사 고양이 미스터 미스토펠리스를 불러내 그의 마법으로 암흑의 무도회장에 빛을 되찾고 올드 듀터로노미를 찾아낸다.
+
+마침내 올드 듀터로노미가 다시 태어나 새로운 젤리클 고양이의 삶을 살 고양이를 정해야 할 시간이 다가오고 그때 그리자벨라가 홀연히 고양이들 앞에 다시 나타난다. 고양이들은 옛날의 아름다운 기억들을 회상하며 괴로워하는 그리자벨라를 받아 들이고 올드 듀터로노미는 그녀를 새로 태어날 고양이로 선택해 헤비사이드 레이어로 올려 보낸다. 올드 듀터로노미는 젤리클 축제를 마무리하며 특성이나 인간과의 차이점에 앞서 고양이들도 우리 인간과 다르지 않다는 것을 설명하며 고양이에 대한 예의를 알려준다.</p></div>
+        </section>
+<!---------------------------------------- cats_02 ---------------------------------------->        
+		
+        <article id="cats_03" class="wheel">
+            <h2 class="four_page_name"><p>Music</p></h2>
+            <span class="black_img"></span>
+            <div class="music_list">
+                <ul>
+                    <li class="music_list_01">
+                        <a href="https://www.youtube.com/embed/Uf5u4CyEzQ8?autoplay=1"><span class="list_icon"></span>Jellicle Song for Jellicle Cats                   
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="music_list_02">
+                        <a href="https://www.youtube.com/embed/Mij1ZAuuujE?autoplay=1"><span class="list_icon"></span>The Old Gumbie Cat
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_03">
+                        <a href="https://www.youtube.com/embed/C7Z_36i1ACg?autoplay=1"><span class="list_icon"></span>The Rum Tum Tugger
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_04">
+                        <a href="https://www.youtube.com/embed/JU8NtL9QKoo?autoplay=1"><span class="list_icon"></span>Grizabella
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_05">
+                        <a href="https://www.youtube.com/embed/Fl6ztFpqj5A?autoplay=1"><span class="list_icon"></span>Mungojerrie and Rumpeteazer
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_06">
+                        <a href="https://www.youtube.com/embed/qagCcoXZi_4?autoplay=1"><span class="list_icon"></span>Old Deuteronomy
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_07">
+                        <a href="https://www.youtube.com/embed/RAN8BdYRj5c?autoplay=1"><span class="list_icon"></span>The Jellicle Ball: The Song of the Jellicles
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_08">
+                        <a href="https://www.youtube.com/embed/hyNY0rItqwA?autoplay=1"><span class="list_icon"></span>Gus: The Theatre Cat
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_09">
+                        <a href="https://www.youtube.com/embed/OekFxRxCuNM?autoplay=1"><span class="list_icon"></span>Skimbleshanks the Railway Cat
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_10">
+                        <a href="https://www.youtube.com/embed/LbjXHP7XifA?autoplay=1"><span class="list_icon"></span>Macavity
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_11">
+                        <a href="https://www.youtube.com/embed/BmEAreSwkGc?autoplay=1"><span class="list_icon"></span>Mr. Mistoffolees
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_12">
+                        <a href="https://www.youtube.com/embed/rIeQQcWnjqA?autoplay=1"><span class="list_icon"></span>Memory
+                        </a>
+                    </li>
+                    
+                    <li class="music_list_13">
+                        <a href="https://www.youtube.com/embed/6yeiiYpkNBw?autoplay=1"><span class="list_icon"></span>The Ad-Dressing of cats
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="music"><iframe src="./images/cats_img/playBtn.png" frameborder="0" allowfullscreen></iframe></div>
+        </article>
+<!---------------------------------------- cats_03 ---------------------------------------->		    
+		    
+        <article id="cats_04" class="wheel">
+            <h2 class="five_page_name"><p>Gallery</p></h2>
+            <span class="black_img"></span>
+            <div class="popup1">
+                <div class="popupBox">
+                    <img src="#" alt="">
+                </div>
+                <button class="close" aria-label="팝업 닫기">×</button>
+            </div>
+            <div class="emptyBox">
+                <ul class="popup_btn">
+                    <li>
+                        <a href="./images/cats_img/cats_1.jpg" role="button">
+                            <span>이미지팝업_01</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_2.jpg" role="button">
+                            <span>이미지팝업_02</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_3.jpg" role="button">
+                            <span>이미지팝업_03</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_4.jpg" role="button">
+                            <span>이미지팝업_04</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_5.jpg" role="button">
+                            <span>이미지팝업_05</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./images/cats_img/cats_6.jpg" role="button">
+                            <span>이미지팝업_06</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_7.jpg" role="button">
+                            <span>이미지팝업_07</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_8.jpg" role="button">
+                            <span>이미지팝업_08</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_9.jpg" role="button">
+                            <span>이미지팝업_09</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="./images/cats_img/cats_10.jpg" role="button">
+                            <span>이미지팝업_10</span>
+                         </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_11.jpg" role="button">
+                            <span>이미지팝업_11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_12.jpg" role="button">
+                            <span>이미지팝업_12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_13.jpg" role="button">
+                            <span>이미지팝업_13</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_14.jpg" role="button">
+                            <span>이미지팝업_14</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_15.jpg" role="button">
+                            <span>이미지팝업_15</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_16.jpg" role="button">
+                            <span>이미지팝업_16</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_17.jpg" role="button">
+                            <span>이미지팝업_17</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_18.jpg" role="button">
+                            <span>이미지팝업_18</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_19.jpg" role="button">
+                            <span>이미지팝업_19</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_20.jpg" role="button">
+                            <span>이미지팝업_20</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_21.jpg" role="button">
+                            <span>이미지팝업_21</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_22.jpg" role="button">
+                            <span>이미지팝업_22</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_23.jpg" role="button">
+                            <span>이미지팝업_23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_24.jpg" role="button">
+                            <span>이미지팝업_24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./images/cats_img/cats_25.jpg" role="button">
+                            <span>이미지팝업_25</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+<!---------------------------------------- cats_04 ---------------------------------------->		    
+				
+		<footer id="boxFoot" class="wheel">
+           <span class="black_img"></span>
+            
+		</footer>
+<!---------------------------------------- boxFoot ---------------------------------------->		    
+
+	</div>
+<!---------------------------------------- wrap ---------------------------------------->
+
+</body>
+</html>

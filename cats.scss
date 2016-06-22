@@ -1,0 +1,217 @@
+html, body{width: 100%; height: 100%;}
+
+#wrap{width: 100%; height: 100vh; margin: 0 auto; display: block; position: relative;
+    >#topAdd{width: 100vw; height: 10vh; background-color: rgba(#333, 0.5); position: relative; position: fixed; z-index: 200;
+        >p {width: 70%; height: 90%; color: #fff; font-size: 1.75rem; float: left; margin-top: 0.5rem; margin-left: 15%;}
+        
+        >.addBox {width: 80%; height: 1.5rem; float: left; margin-top: -2rem; margin-left: 15%;
+            >a{width: 100%; height: 100%; display: block; color: aqua;}
+        }// addBox
+        
+        >button {width: 3vw; height: 3vw; float: right; background-color: #fff; font-weight: bold; font-size: 2rem; position: absolute; top: 1rem;}
+    }// topAdd
+    
+    >#listBtn{width: 4vw; height: 16.5vw; float: left; margin-top: 40vh; margin-left: 4vw; position: fixed; z-index: 100;
+            >span{width: 0; height: 0; display: block; overflow: hidden;}
+            >.indi{width: 100%; height: 100%;
+                >li{width: 2vw; height: 2vw; margin-top: 0.5vw; margin-left: 1vw; background-color: #ccc; border-radius: 50%; position: relative;
+                    &:first-child{margin-top: 0;}
+                    >a{width: 2vw; height: 2vw; display: block;  border-radius: 50%; }// a
+                    >.cat_btn{width: 4vw; height: 2vw; float: left; background-image: url(../images/cats_img/catBtn_W.png); background-repeat: no-repeat; background-size: 100% 100%; position: absolute; top: -2vw; left: -1vw;}
+                }// li
+            }// indi
+        }// listBtn
+    
+    >h1{width: 8.5vw; height: 8.5vw; float: left; top: 5vw; left: 17vw; position: fixed; z-index: 100;
+        >a{width: 100%; height: 100%; display: block; background-image: url(../images/cats_img/cats_logo.png); background-repeat: no-repeat; background-size: 100% 100%;}
+    }// h1
+    
+    *.black_bgc{width: 100vw; height: 100vh; position: absolute; z-index: -300; opacity: 0.4;}
+/*--------------------------------  wrap  --------------------------------------*/
+    
+    >#boxHead{width: 100vw; height: 100vh; position: relative; overflow: hidden;
+        >video{width: 100vw; height: auto; position: absolute; z-index: -500;}
+        >.one_page_name{width: 40vw; height: 7vw; float: left; margin-top: 6vw; margin-left: 30vw;
+            >p{width: 100%; height: 100%; font-size: 7rem; text-align: center; line-height: 10rem; color: #fff;}
+        }// page_name
+        
+        >#bigBox{width: 61vw; height: 30vw; float: left; margin-top: 4vw; margin-left: 20vw;
+            >li{border: 1px solid #ccc; float: left; background-color: rgba(#000, 0.5);}
+            >.about_box{width: 20vw; height: 30vw; border: 2px solid #ccc;}
+            >.character_box{width: 20vw; height: 15vw;}
+            >.story_box{width: 20vw; height: 15vw;}
+            >.music_box{width: 20vw; height: 15vw;}
+            >.gallery_box{width: 20vw; height: 15vw;}
+        }// bigBox
+    }// boxHead
+    
+/*--------------------------------  boxHead  --------------------------------------*/
+    
+    >#cats_01{width: 100vw; height: 100vh; background-image: url(../images/cats_img/cats_bgi.png); background-repeat: no-repeat; background-size: 100% 100%;
+        
+        >.two_page_name{width: 40vw; height: 7vw; float: left; margin-top: 5vw; margin-left: 30vw;
+            >p{width: 100%; height: 100%; font-size: 7rem; text-align: center; line-height: 10rem; color: #fff;}
+        }// two_page_name
+        
+        >.introduce{width: 33vw; height: 25vw; float: left; margin-top: 7vw; margin-left: 17vw; border: 1px solid #ccc; border-radius: 5px; position: relative; background-color: rgba(#595959, 0.8);
+            
+            >.face{width: 8vw; height: 8vw; float: left; background-color: #fff; margin-top: 1vw; margin-left: 3vw; border-radius: 50%; border: 1px solid #fff; overflow: hidden;
+                >img{width: 100%; height: 100%;}
+            }// face
+            
+            >.name{width: 13vw; height: 5vw; float: left; margin-top: 2vw; margin-left: 2vw;
+                >p{width: 100%; height: 100%; font-size: 3rem; text-align: center; line-height: 3rem; color: #fff;}
+            }// name
+            
+            >.part{width: 20vw; height: 3vw; float: left; margin-top: -1vw; margin-left: 10vw;
+                >p{width: 100%; height: 100%; font-size: 2rem; text-align: center; line-height: 4rem; color: #fff;}
+            }// part
+            
+            >.explain{width: 28vw; height: 12vw; float: left; margin-top: 1vw; margin-left: 3vw;
+                >p{width: 100%; height: 100%; font-size: 1.25rem; line-height: 1.7rem; color: #fff; margin-top: 10px; margin-left: 5px;}
+            }// explain
+        }// introduce
+        
+        >.character{width: 31vw; height: 33vw; float: left; margin-top: 3vw; margin-left: 2vw;
+            >li{width: 5.5vw; height: 5vw; float: left; margin-top: 0.5vw; margin-left: 0.5vw; border-radius: 50%;  background-repeat: no-repeat; background-size: 100% 100%; background-position: center;
+            &:hover{background-size: 120% 120%;}
+                >a{width: 100%; height: 100%; display: block;}
+            }// li
+            >.cat_01{background-image: url(../images/cats_img/cat_01_munkustrap.jpg); margin-top: 0;}
+            >.cat_02{background-image: url(../images/cats_img/cat_02_old_deuteronomy.jpg); margin-top: 0;}
+            >.cat_03{background-image: url(../images/cats_img/cat_03_grizabella.jpg); margin-top: 0;}
+            >.cat_04{background-image: url(../images/cats_img/cat_04_rum_tum_tugger.jpg); margin-top: 0;}
+            >.cat_05{background-image: url(../images/cats_img/cat_05_mistoffelees.jpg); margin-top: 0;}
+            >.cat_06{background-image: url(../images/cats_img/cat_06_mungojerrie.jpg);}
+            >.cat_07{background-image: url(../images/cats_img/cat_07_rumpleteazer.jpg);}
+            >.cat_08{background-image: url(../images/cats_img/cat_08_skimbleshanks.jpg);}
+            >.cat_09{background-image: url(../images/cats_img/cat_09_jennyanydots.jpg);}
+            >.cat_10{background-image: url(../images/cats_img/cat_10_bustopher_jones.jpg);}
+            >.cat_11{background-image: url(../images/cats_img/cat_11_gus.jpg);}
+            >.cat_12{background-image: url(../images/cats_img/cat_12_victoria.jpg);}
+            >.cat_13{background-image: url(../images/cats_img/cat_13_demeter.jpg);}
+            >.cat_14{background-image: url(../images/cats_img/cat_14_macavity.jpg);}
+            >.cat_15{background-image: url(../images/cats_img/cat_15_jellylorum.jpg);}
+            >.cat_16{background-image: url(../images/cats_img/cat_16_bombalurina.jpg);}
+            >.cat_17{background-image: url(../images/cats_img/cat_17_alonzo.jpg);}
+            >.cat_18{background-image: url(../images/cats_img/cat_18_cassandra.jpg);}
+            >.cat_19{background-image: url(../images/cats_img/cat_19_tumblebrutus.jpg);}
+            >.cat_20{background-image: url(../images/cats_img/cat_20_coricopat.jpg);}
+            >.cat_21{background-image: url(../images/cats_img/cat_21_tantomile.jpg);}
+            >.cat_22{background-image: url(../images/cats_img/cat_22_sillabub.jpg);}
+            >.cat_23{background-image: url(../images/cats_img/cat_23_pouncival.jpg);}
+            >.cat_24{background-image: url(../images/cats_img/cat_24_admetus.jpg);}
+            >.cat_25{background-image: url(../images/cats_img/cat_25_electra.jpg);}
+            >.cat_26{background-image: url(../images/cats_img/cat_question.png);}
+            >.cat_27{background-image: url(../images/cats_img/cat_question.png);}
+            >.cat_28{background-image: url(../images/cats_img/cat_question.png);}
+            >.cat_29{background-image: url(../images/cats_img/cat_question.png);}
+        }// character
+    }// cats_01
+    
+/*--------------------------------  cats_01  --------------------------------------*/    
+    
+    >#cats_02{width: 100vw; height: 100vh; background-color: #000; position: relative;  background-image: url(../images/cats_img/cats_bgi.png); background-repeat: no-repeat; background-size: 100% 100%;
+        
+        >.three_page_name{width: 40vw; height: 7vw; float: left; margin-top: 5vw; margin-left: 30vw;
+            >p{width: 100%; height: 100%; font-size: 7rem; text-align: center; line-height: 10rem; color: #fff;}
+        }// three_page_name
+        
+        >.movie{width: 30vw; height: 20vw; float: left; margin-top: 7vw; margin-left: 17vw; border: 2px solid #ccc; border-radius: 3px;
+            >iframe{width: 100%; height: 100%;}
+        }
+        >.story_write{width: 35vw;  height: 30vw; float: left; margin-top: 3vw; margin-left: 3vw; border: 1px solid #ccc; border-radius: 3px; overflow-y: scroll;
+            >p{width: 95%; height: auto; font-size: 1.125rem; line-height: 2rem; color: #fff; margin-top: 15px; margin-left: 20px;
+                >span{color: #fff; font-size: 1.5rem;}
+            }
+        }// story_write
+    }// cats_02
+    
+/*--------------------------------  cats_02  --------------------------------------*/
+    
+    >#cats_03{width: 100vw; height: 100vh; background-color: #000; position: relative; background-image: url(../images/cats_img/cats_bgi.png); background-repeat: no-repeat; background-size: 100% 100%;
+        
+        >.four_page_name{width: 40vw; height: 7vw; float: left; margin-top: 5vw; margin-left: 30vw;
+            >p{width: 100%; height: 100%; font-size: 7rem; text-align: center; line-height: 10rem; color: #fff;}
+        }// four_page_name
+        
+        >.music_list{width: 27vw; height: 33vw; float: left; margin-top: 3vw; margin-left: 20vw;
+            >ul{width: 100%; height: 100%;
+                >li{width: 25vw; height: 2vw; float: left; margin-top: 0.4vw;
+                    >a{width: 100%; height: 100%; display: block; line-height: 2.5vw; font-style: oblique; font-weight: bold; font-size: 1.25rem; color: #fff; text-decoration: none;
+                        >span{width: 2vw; height: 1.8vw; float: left; margin-right: 0.5vw; background-image: url(../images/cats_img/cat_music_foot_w2.png); background-repeat: no-repeat; background-size: 100% 100%;}
+                    }// a
+                }// li
+            }// ul
+        }// music_list
+        
+        >.music{width: 30vw; height: 20vw; float: left; background-color: #000; margin-top: 7vw; margin-left: 2vw; border: 2px solid #ccc; border-radius: 3px;
+            >iframe{width: 100%; height: 100%;}
+        }// music
+    }// cats_03
+    
+/*--------------------------------  cats_03  --------------------------------------*/
+    
+    >#cats_04{width: 100vw; height: 100vh; background-color: #000; position: relative; background-image: url(../images/cats_img/cats_bgi.png); background-repeat: no-repeat; background-size: 100% 100%;
+        
+        >.five_page_name{width: 40vw; height: 7vw; float: left; margin-top: 5vw; margin-left: 30vw;
+            >p{width: 100%; height: 100%; font-size: 7rem; text-align: center; line-height: 10rem; color: #fff;}
+        }// five_page_name
+        
+        >.popup1 {width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); position: fixed; z-index: 500; top: 0; left: 0; display: none;
+            >.popupBox {width: 60%; height: auto; border: 3px solid #fff; position: absolute; left: 20%; top: 5%; border-radius: 10px; box-sizing: border-box; box-shadow: 1px 1px 1px #333;
+                >img {width: 100%; height: 90vh;}
+            }// popupBox
+            
+            >.close {width: 2rem; height: 2rem; background-color: #333; color: #fff; font-weight: bold; position: absolute; right: calc(20% - 1rem); top: calc(5% - 1rem); z-index: 300; border-radius: 10px;
+                &:hover{font-size: 1.5rem;}
+            }// close
+        }// popup1
+        
+        >.emptyBox{width: 50vw; height: 26vw; float: left;
+            >ul {width: 100%; height: 100%; border: 3px solid #fff; box-sizing: border-box; margin-top: 5vh; margin-left: 25vw; 
+              &:after {content: ""; display: block; clear: both;}
+                >li {width: 20%; height: 5vw; background-color: #fff; float: left; margin-top: 0.2vh; border: -1px solid #ccc; box-sizing: border-box;
+                    >a {width: 100%; height: 100%; display: block; background-repeat: no-repeat; background-size: 100% 100%; background-position: center; transition: all 0.3s;
+                        &:hover {background-size: 120% 120%;}
+                    }// a
+    
+                    &:nth-child(1){>a{background-image: url("../images/cats_img/cats_1.jpg");}}
+                    &:nth-child(2){>a{background-image: url("../images/cats_img/cats_2.jpg");}} 
+                    &:nth-child(3){>a{background-image: url("../images/cats_img/cats_3.jpg");}} 
+                    &:nth-child(4){>a{background-image: url("../images/cats_img/cats_4.jpg");}} 
+                    &:nth-child(5){>a{background-image: url("../images/cats_img/cats_5.jpg");}} 
+                    &:nth-child(6){>a{background-image: url("../images/cats_img/cats_6.jpg");}} 
+                    &:nth-child(7){>a{background-image: url("../images/cats_img/cats_7.jpg");}} 
+                    &:nth-child(8){>a{background-image: url("../images/cats_img/cats_8.jpg");}} 
+                    &:nth-child(9){>a{background-image: url("../images/cats_img/cats_9.jpg");}} 
+                    &:nth-child(10){>a{background-image: url("../images/cats_img/cats_10.jpg");}} 
+                    &:nth-child(11){>a{background-image: url("../images/cats_img/cats_11.jpg");}} 
+                    &:nth-child(12){>a{background-image: url("../images/cats_img/cats_12.jpg");}} 
+                    &:nth-child(13){>a{background-image: url("../images/cats_img/cats_13.jpg");}} 
+                    &:nth-child(14){>a{background-image: url("../images/cats_img/cats_14.jpg");}} 
+                    &:nth-child(15){>a{background-image: url("../images/cats_img/cats_15.jpg");}} 
+                    &:nth-child(16){>a{background-image: url("../images/cats_img/cats_16.jpg");}} 
+                    &:nth-child(17){>a{background-image: url("../images/cats_img/cats_17.jpg");}} 
+                    &:nth-child(18){>a{background-image: url("../images/cats_img/cats_18.jpg");}} 
+                    &:nth-child(19){>a{background-image: url("../images/cats_img/cats_19.jpg");}} 
+                    &:nth-child(20){>a{background-image: url("../images/cats_img/cats_20.jpg");}} 
+                    &:nth-child(21){>a{background-image: url("../images/cats_img/cats_21.jpg");}} 
+                    &:nth-child(22){>a{background-image: url("../images/cats_img/cats_22.jpg");}} 
+                    &:nth-child(23){>a{background-image: url("../images/cats_img/cats_23.jpg");}} 
+                    &:nth-child(24){>a{background-image: url("../images/cats_img/cats_24.jpg");}} 
+                    &:nth-child(25){>a{background-image: url("../images/cats_img/cats_25.jpg");}} 
+                }// li
+            }// popup_btn
+        }// emptyBox
+    }// cats_04
+    
+/*--------------------------------  cats_04  --------------------------------------*/
+    
+    >#boxFoot{width: 100vw; height: 100vh; position: relative; background-image: url(../images/cats_img/cats_bgi.png); background-repeat: no-repeat; background-size: 100% 100%;
+    
+    }// boxFoot
+    
+/*--------------------------------  boxFoot  --------------------------------------*/
+    
+}// wrap

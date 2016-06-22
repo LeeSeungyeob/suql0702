@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/joinPage.css">
-    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/join_pc.css">
+    <link rel="stylesheet" href="./css/join_mobile.css">
     <style type="text/css">
 
     </style>
@@ -29,42 +29,43 @@
                 </div>
             </div><!--// #sitemap -->
             <div id="search">
-                <h1><a href="../tp_index.html"><span>logo</span></a></h1>
+                <h1><a href="./tp_index.html"><span>logo</span></a></h1>
                 <form action="#" method="get" role="search" class="search_box">
                     <fieldset>
-                        <legend>검색</legend>
+                        <legend>웹투어 검색</legend>
                         <input type="search" name="searchBox" id="searchBox" value="" />
-                        <label for="searchBox" class="me_hidden">필요한 항목을 검색하세요.</label>
+                        <label for="searchBox" class="me_hidden">검색창 입니다.</label>
                         <button type="button" class="fa fa-search"><span class="me_hidden">검색</span></button>
                     </fieldset>
                     </form>
                 <div class="search_icon">
                     <ul class="me_link">
-                        <li class="sb_01"><a href="#">이벤트</a><span></span></li>
-                        <li class="sb_02"><a href="#">기획전</a><span></span></li>
-                        <li class="sb_03"><a href="#">홈쇼핑</a><span></span></li>
-                        <li class="sb_04"><a href="#">기업 및 단체</a></li>
+                        <li class="sb_01"><a href="#"><span>이벤트</span></a><span><!--여백 바--></span></li>
+                        <li class="sb_02"><a href="#"><span>기획전</span></a><span><!--여백 바--></span></li>
+                        <li class="sb_03"><a href="#"><span>홈쇼핑</span></a><span><!--여백 바--></span></li>
+                        <li class="sb_04"><a href="#"><span>기업 및 단체</span></a></li>
                     </ul>
                 </div>
             </div><!--// #search -->
             <div id="gnb">
                 <div id="gnbBox">
-                    <div class="menu"><a href=""><i class="fa fa-bars" aria-hidden="true"><span>메뉴아이콘</span></i></a></div>
+                    <button type="button" class="menu_btn">
+                       <div><span>첫번째 라인</span></div>
+                       <div><span>두번째 라인</span></div>
+                       <div><span>세번째 라인</span></div>
+                    </button>
                     <ul>
-                        <li><a href="#">항공권</a></li>
+                        <li><a href="./sub1.html">항공권</a></li>
                         <li><a href="#">해외패키지</a></li>
                         <li><a href="#">국내여행</a></li>
                         <li><a href="#">자유여행</a></li>
                         <li><a href="#">테마여행</a></li>
                         <li><a href="#">여행이야기</a></li>
                     </ul>
+                    <div id="bg"><span>오퍼시티</span></div>
                 </div>
             </div><!--// #gnb -->
         </div><!--// #header -->
-        
-           
-           
-           
            
         <div id="article">
             <h2>회원가입 페이지</h2>
@@ -155,22 +156,22 @@
                         
                         <dl class="sms_yes_no">
 						    <dt><i class="j_img"></i>
-                                <label for="s_yes">SMS 수신동의</label></dt>
+                                <label for="s_yes">SMS</label></dt>
 						    <dd>
 						        <input type="radio" name="sms_yes_no" id="s_yes" value="yes" >
-						        <label for="s_yes">Yes</label>
+						        <label for="s_yes">수신</label>
 						        <input type="radio" name="sms_yes_no" id="s_no" value="no" >
-                                <label for="s_no">No</label>
+                                <label for="s_no">거부</label>
 						    </dd>
 					    </dl>
                         <dl class="email_yes_no">
 						    <dt>
-                               <label for="e_yes">Email 수신동의</label></dt>
+                               <label for="e_yes">Email</label></dt>
                             <dd>
                                 <input type="radio" name="email_yes_no" id="e_yes" value="yes" >
-						        <label for="e_yes">Yes</label>
+						        <label for="e_yes">수신</label>
 						        <input type="radio" name="email_yes_no" id="e_no" value="no" >
-						        <label for="e_no">No</label>
+						        <label for="e_no">거부</label>
                             </dd>
                         </dl>
                     </fieldset>
@@ -224,10 +225,6 @@
             </div>
         </div><!--// #article-->
          
-           
-           
-           
-           
         <div id="footer">
             <div id="footer_box">
                 <div id="fnb">

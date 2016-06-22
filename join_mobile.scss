@@ -1,0 +1,207 @@
+/* join_mobile.scss */
+
+html, body{height: 100%; }
+*{font-family: "나눔바른고딕"}
+
+// mobile_v
+
+@media screen and (max-width: 480px){
+    #wrap{}
+    
+    #header{width: 100%; height: 40px; position: fixed; z-index: 50; background-color: #fff;
+        #sitemap{display: none; } // #sitemap
+        #search{width: calc(100% -30px); height: auto; float: left; margin-top: 5px;
+            >h1{width: 70px; height: 30px; background-image: url(../img/logo2.gif); background-size:contain; background-repeat: no-repeat; background-position: center center; float: left; }
+            >.search_box{width: 40vw; height: 25px; float: left; border-radius: 10px; border: 1px solid #ffc621; margin-left: 5vw;
+                >fieldset{width: 100%; height: 20px; margin-top: 3px; margin-left: 5px;
+                    >input{width: 78%; height: 20px;float: left; }
+                    >button{width: 20%; height: 20px; float: right; background-color: transparent;}
+                }
+            }
+            >.search_icon{display: none; }
+        } // #search
+        #gnb{width: 30px; height: 30px; float: right; font-size: 30px; text-align: center; line-height: 30px; margin-right: 5px; margin-top: 5px; 
+            #gnbBox{width: 100%; height: 100%; position: relative; right: 3%; 
+                >.menu_btn{position: relative; right: 3%; top: 0%; background-color: transparent; margin-top: 5%;  transition: all 0.4s; width: 1.5rem; height: 1.5rem;
+                    >div{width: 100%; height: 15%; background-color: #333; border-radius: 2rem; margin-bottom: 15%; transition: all 0.7s;
+                        >span{width: 0; height: 0; display: block; overflow: hidden;}
+                        &:last-child{margin-bottom: 0; }
+                    }
+                    &:hover{cursor: pointer; }
+                }
+                >.close_btn{
+                    >div{position: absolute; right: 3%; top: 43%;
+                        &:nth-child(1){transform: rotate(45deg); }
+                        &:nth-child(2){display: none; }
+                        &:nth-child(3){transform: rotate(-45deg); }
+                    }
+                }
+                >ul{width: 40vw; height: 100vh; position: absolute; top: 35px; background-color: #ddd; right: calc(-40vw - 6px); transition: all 0.4s; z-index: 100;
+                    >li{width: 100%; height: 5%;
+                        >a{width: 100%; height: 100%; display: block; text-decoration: none; font-size: 1.2rem; line-height: 250%;}
+                    }
+                }
+                .menu_list{right: -6px; z-index: 300; }
+                #bg{width: 100vw; height: 100vh; background-color: rgba(#333, 0.5); position: absolute; right: -6px; top: 35px; display: none;
+                    >span{width: 0; height: 0; display: block; overflow: hidden;}
+                }
+            }
+        } // #gnb
+    } // #header
+    
+    #article{width: 460px; height: auto; padding: 80px 10px;
+        >h2{width: 37vw; height: 6.5vw; font-size: 5vw; display: block; border-bottom: 1px solid #595959; margin-left: 4vw; margin-bottom: 4vw;}
+        #join{width: 100%; height: auto; margin: 0 auto;
+            >form{width: 100%; height: 100%;
+                >fieldset{width: 100%; height: auto; border-bottom: 1px solid #595959; padding-bottom: 3.2vw; margin-bottom: 2.2vw;
+                    >dl{width: 100%; height: 6.5vw; margin-top: 2vw;
+                        >dt{width: 24vw; height: 100%; padding-left: 7px; float: left;
+                            >i{width: 16px; height: 20px; margin:5px 7px; display: block; float: left;}
+                            >label{width: 60px; height: 20px; margin: 5px; display: block; float: left;}
+                        }// dt
+                        >dd{width: 300px; height: 100%; float: left;
+                            >input{width: 140px; height: 30px; border: 2px solid #999; float: left; box-sizing: border-box; border-radius: 5px; margin-right: 20px; text-indent: 0.06rem;}
+                            >button{width: 70px; height: 26px; cursor: pointer; float: left;}
+                        }// dd
+                    }// dl
+                }// fieldset
+            }// form
+        }// #join
+        
+        #join .form_01{width: 100%; height: 120px;}
+        #join .form_02{width: 100%; height: 200px;}
+        #join .form_03{width: 100%; height: 165px; margin-bottom: 20px; border-bottom: 0;}
+        #join .form_04{width: 100%; height: 40px; border-bottom: 0; margin: 0px; padding: 0;}
+
+        .j_img{background-image: url(../img/join_icon.png); background-repeat: no-repeat;}
+        
+        dt>label>span, dd>label>span ,dd>button>span{width: 0; height: 0; display: block; overflow: hidden;}
+    
+        .join_1 dt>i{background-position:-50px 0;}
+        .join_1 dt>label{background-position:-70px 0;}
+        .join_1 dd>button{background-position:-352px -164px; margin-top: 2px; border-radius: 3px}
+        
+        .join_2 dt>i{background-position:-50px -20px;}
+        .join_2 dt>label{background-position:-70px -20px;}
+        .join_2 dd>i{width: 0; height: 0; overflow: hidden;}
+        
+        .join_3 dt>i{background-position:-50px -40px;}
+        .join_3 dt>label{background-position:-70px -40px;}
+        .join_3 dd>i{width: 0; height: 0; overflow: hidden;}
+        
+        .join_4 dt>i{background-position:-50px -60px;}
+        .join_4 dt>label{background-position:-70px -60px;}
+        .join_4 dd>i{width: 0; height: 0; overflow: hidden;}
+        
+        .join_5 dt>i{background-position:-50px -80px;}
+        .join_5 dt>label{background-position:-70px -80px;}
+        .join_5 dd>button{background-position:-352px -164px; margin-top: 2px; border-radius: 3px}
+        
+        .join_6 dt>i{background-position:-50px -100px;}
+        .join_6 dt>label{background-position:-70px -100px;}
+        .join_6 dt>label>.me_hidden{width: 0; height: 0; display: block; overflow: hidden;}
+        .join_6 dd>#phone_box_1{width: 70px; height: 30px; border: 2px solid #999; float: left; box-sizing: border-box; border-radius: 5px; margin-right: 10px; text-indent: 0.06rem;}
+        .join_6 dd>#phone_box_2{width: 70px; height: 30px;}
+        .join_6 dd>#phone_box_3{width: 70px; height: 30px;}
+        .join_6 dd>.line_bar{width: 10px; height: 14px; margin-right:10px; border-bottom: 1px solid #595959; float: left;}
+        
+        .join_7 dt>i{background-position:-50px -120px;}
+        .join_7 dt>label{background-position:-70px -120px;}
+        .join_7 dd>#e_mail_box_1{width: 110px; height: 30px;}
+        .join_7 dd>#e_mail_box_2{width: 140px; height: 30px;}
+        .join_7 dd>i{width: 20px; height: 20px; background-position:-280px -80px; margin-top: 7px; margin-left: -15px; margin-right: 3px; float: left;}
+
+        #join>form>fieldset>.sms_yes_no{width: 221px; height: 100%; float: left;}
+        #join>form>fieldset>.sms_yes_no>dt{width: 84px; height: 100%; padding-left: 7px; float: left;}
+        #join>form>fieldset>.sms_yes_no>dd{width: 130px; height: 100%; float: right;}
+        #join .sms_yes_no dt>i{width: 20px; height: 20px; background-position:0 -100px; margin:5px 7px; display: block; float: left;}
+        #join .sms_yes_no dt>label{width: 30px; height: 20px; margin: 5px 10px; display: block; float: left; margin-left: 10px; text-align: center; font-size: 0.85rem; background-color: rgba(#58D20B, 0.5);}
+        #join .sms_yes_no dd>#s_yes{width: 15px; height: 15px; float: left; margin-top: 8px; margin-left: 6px;}
+        #join .sms_yes_no dd>#s_no{width: 15px; height: 15px; float: left; margin-top: 8px; margin-left: 6px;}
+        #join .sms_yes_no dd>label{width: 30px; height: 30px; float: left; margin-top: 8px; margin-left: -10px; font-size: 0.825rem;}
+        
+        #join>form>fieldset>.email_yes_no{width: 221px; height: 100%; float: left;}
+        #join>form>fieldset>.email_yes_no>dt{width: 50px; height: 100%; padding-left: 7px; float: left;}
+        #join>form>fieldset>.email_yes_no>dd{width: 130px; height: 100%; float: left;}
+        #join .email_yes_no dt>i{width: 20px; height: 20px; background-position:0 -100px; margin:5px; display: block; float: left;}
+        #join .email_yes_no dt>label{width: 40px; height: 20px; margin: 5px 0; display: block; float: left; text-align: center; font-size: 0.85rem; background-color: rgba(#58D20B, 0.5); }
+        #join .email_yes_no dd>#e_yes{width: 15px; height: 15px; float: left; margin-top: 8px; margin-left: 6px;}
+        #join .email_yes_no dd>#e_no{width: 15px; height: 15px; float: left; margin-top: 8px; margin-left: 6px;}
+        #join .email_yes_no dd>label{width: 30px; height: 30px; float: left; margin-top: 8px; margin-left: -10px; font-size: 0.825rem;}
+        
+        #join .join_8 dt>i{background-position:-50px -140px;}
+        #join .join_8 dt>label{background-position:-70px -140px;}
+        #join .join_8 dd>input{width: 70px; height: 30px;}
+        #join .join_8 dd>.year{width: 14px; height: 20px; background-position:-280px -100px; margin-top: 7px; margin-left: -15px; margin-right: 8px; float: left;}
+        #join .join_8 dd>.month{width: 14px; height: 20px; background-position:-300px -100px; margin-top: 7px; margin-left: -15px; margin-right: 8px; float: left;}
+        #join .join_8 dd>.day{width: 14px; height: 20px; background-position:-320px -100px; margin-top: 7px; margin-left: -15px; float: left;}
+        
+        #join .join_9 dt>i{width: 20px; height: 20px; background-position:-50px -160px;}
+        #join .join_9 dt>label{background-position:-70px -160px;}
+        #join .join_9 dd>input{width: 60px; margin-right: 10px;}
+        #join .join_9 dd>.line_bar{width: 10px; height: 14px; margin-right:10px; border-bottom: 1px solid #595959; float: left;}
+        #join .join_9 dd>button{background-position:-255px -162px; float: left; margin-top: 2px; border-radius: 3px}
+        
+        #join .join_10 dt>i{background-position:-50px -160px;}
+        #join .join_10 dt>label{background-position:-70px -180px;}
+        #join .join_10 dd>input{width: 180px; margin-bottom: 8px;}
+    
+        #join .form_04>button{width: 100px; height: 40px; cursor: pointer;}
+    
+        button[type="submit"]{float: left; margin-left: 100px; background-color: #58D20B;}
+        button[type="reset"]{float: right; margin-right: 100px;}
+        
+        
+        
+        
+        
+    } // #article
+    
+    #footer{
+        #footer_box{
+            #fnb{
+                >ul{width: 100%; height: 50px;
+                    >li{width:calc( (100% - 32px) / 3 ); height: 15px; padding: 5px 5px; float: left; border-right: 1px solid #aaa; text-align: center;
+                        >a{text-align: center; font-size: .7rem; line-height: 17px; text-decoration: none; 
+                        }
+                        
+                        &:nth-child(3){border-right: 0;}
+                        &:nth-child(1n+4){width:calc((100% - 43px) / 4);}
+                        &:nth-child(5){}
+                        &:nth-child(6){
+                            >a{letter-spacing: -0.0625rem; font-size: .67rem;}
+                        }
+                        &:nth-child(7){border-right: 0;}
+                    }
+                }
+            }
+            #addBox{width: 100%; margin-top: 20px;
+                >*{width: 100%; text-align: center; font-size: 0.8rem;}
+                >.info{
+                    >h3{width: 100%; height: auto;}
+                    >p{margin-top: 3px;}
+                }
+                >.add{margin-top: 20px;
+                    >h3{width: 100%; height: auto;}
+                }
+                >.con{width: auto; height: 70px; margin: 0 auto; margin-top: 20px; 
+                    >h3{width: auto; height: auto;}
+                    >ul{width: auto; margin-left: calc(50% - 110px);
+                        >li{width: 50px; height: 50px; float: left; margin-right: 10px;
+                            >a{width: 50px; height: 50px; display: block; background-repeat: no-repeat; background-size: cover; background-position: center; }
+                            &:nth-child(1){a{background-image: url(../img/F_icon.svg.png);}}
+                            &:nth-child(2){a{background-image: url(../img/instagram-logo.png);}}
+                            &:nth-child(3){a{background-image: url(../img/com_kakao_story.png);}}
+                            &:nth-child(4){margin-right: 0;
+                                >a{background-image: url(../img/com_kakao_story.png);}
+                            }
+                        }
+                    }
+                }
+            }
+            #foot_info{margin-top: 20px;
+                >*{text-align: center; font-size: 0.75rem; margin-top: 3px;}
+            }
+        } // #footer_box
+    } // #footer
+}
